@@ -1,3 +1,4 @@
+package ebayForcaster;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -23,66 +24,28 @@ public class DBConnect {
     private ResultSet rs;
 
     public DBConnect() {
-        try {
-            Class.forName(DRIVER);
-            con = DriverManager.getConnection("jdbc:mysql://" + LOCATION + "/"
-                    + DATABASE, USER, PASSWORD);
-            st = con.createStatement();
-
-        } catch (ClassNotFoundException | SQLException ex) {
-            ErrorHandler.handleError(ex, null);
-        }
+            try {
+				Class.forName(DRIVER);
+			} catch (ClassNotFoundException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+            try {
+				con = DriverManager.getConnection("jdbc:mysql://" + LOCATION + "/"
+				        + DATABASE, USER, PASSWORD);
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+            try {
+				st = con.createStatement();
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
     }
 
-    public void insertItems(ArrayList<Item> items) throws SQLException {
-        for (Item i : items) {
-            insertItem(i);
-        }
-    }
-
-    public void insertItem(Item item) throws SQLException {
-
-        PreparedStatement preparedStatement = null;
-        String query = "INSERT INTO item_list (item_number, name, manufacturer, "
-                + "model, subcat_id, subcategory, timestamp, price, shipping, "
-                + "review_count, review_score) VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, "
-                + "?, ?) "
-                + "ON DUPLICATE KEY "
-                + "UPDATE item_number = VALUES(item_number), "
-                + "name = VALUES(name), manufacturer = VALUES(manufacturer), "
-                + "model = VALUES(model), subcat_id = VALUES(subcat_id), "
-                + "subcategory = VALUES(subcategory), "
-                + "timestamp = VALUES(timestamp), price = VALUES(price), "
-                + "shipping = VALUES(shipping), review_count = VALUES(review_count), "
-                + "review_score = VALUES(review_score);";
-
-        try {
-            preparedStatement = con.prepareStatement(query);
-            preparedStatement.setString(1, item.getItemNumber());
-            preparedStatement.setString(2, item.getName());
-            preparedStatement.setString(3, item.getManufacturer());
-            preparedStatement.setString(4, item.getModel());
-            preparedStatement.setInt(5, item.getSubcatID());
-            preparedStatement.setString(6, item.getSubcategory());
-            preparedStatement.setTimestamp(7, getCurrentTimeStamp());
-            preparedStatement.setInt(8, item.getPrice());
-            preparedStatement.setInt(9, item.getShipping());
-            preparedStatement.setInt(10, item.getReviewCount());
-            preparedStatement.setShort(11, item.getReviewScore());
-
-            preparedStatement.executeUpdate();
-
-        } catch (SQLException e) {
-            ErrorHandler.handleError(e, "Item Number: " + item.getItemNumber());
-
-        } finally {
-            if (preparedStatement != null) {
-                preparedStatement.close();
-            }
-        }
-    }
-
-    public void insertEbayItem(EbayItem item) throws SQLException {
+    public void insertEbayItems(String jsonString) throws SQLException {
 
         java.text.SimpleDateFormat sdf
                 = new java.text.SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
@@ -119,7 +82,6 @@ public class DBConnect {
             preparedStatement.executeUpdate();
 
         } catch (SQLException e) {
-            ErrorHandler.handleError(e, "Ebay Item ID: " + item.getEbayItemID());
 
         } finally {
             if (preparedStatement != null) {
@@ -128,147 +90,6 @@ public class DBConnect {
         }
     }
 
-    public void insertOBItem(OBItemStatus item) throws SQLException {
-
-        PreparedStatement preparedStatement = null;
-
-        boolean inStock = item.isInStock();
-        String query;
-
-        if (inStock) {
-            query = "INSERT INTO ob_item_stats (item_number, ob_price, "
-                    + "ob_shipping, last_updated, instock, last_instock) VALUES(?, "
-                    + "?, ?, ?, ?, ?) "
-                    + "ON DUPLICATE KEY "
-                    + "UPDATE item_number = VALUES(item_number), "
-                    + "ob_price = VALUES(ob_price), ob_shipping = VALUES(ob_shipping), "
-                    + "last_updated = VALUES(last_updated), instock = VALUES(instock),"
-                    + "last_instock = VALUES(last_instock);";
-
-        } else {
-            query = "INSERT INTO ob_item_stats (item_number, ob_price, "
-                    + "ob_shipping, last_updated, instock) VALUES(?, "
-                    + "?, ?, ?, ?) "
-                    + "ON DUPLICATE KEY "
-                    + "UPDATE item_number = VALUES(item_number), "
-                    + "ob_price = VALUES(ob_price), ob_shipping = VALUES(ob_shipping), "
-                    + "last_updated = VALUES(last_updated), instock = VALUES(instock);";
-        }
-        try {
-            preparedStatement = con.prepareStatement(query);
-            preparedStatement.setString(1, item.getItemNumber());
-            preparedStatement.setInt(2, item.getPrice());
-            preparedStatement.setInt(3, item.getShipping());
-            preparedStatement.setTimestamp(4, getCurrentTimeStamp());
-            preparedStatement.setBoolean(5, inStock);
-            if (inStock) {
-                preparedStatement.setTimestamp(6, getCurrentTimeStamp());
-            }
-
-            preparedStatement.executeUpdate();
-
-        } catch (SQLException e) {
-            ErrorHandler.handleError(e, "Item Number: " + item.getItemNumber());
-
-        } finally {
-            if (preparedStatement != null) {
-                preparedStatement.close();
-            }
-        }
-
-    }
-
-    public void insertSubcategory(int id, String[] cats) throws SQLException {
-
-        PreparedStatement preparedStatement = null;
-        String query = "INSERT INTO newegg_categories (id, store, category, subcategory) "
-                + "VALUES(?, ?, ?, ?) "
-                + "ON DUPLICATE KEY "
-                + "UPDATE id = VALUES(id), store = VALUES(store), "
-                + "category = VALUES(category), subcategory = VALUES(subcategory);";
-
-        try {
-            preparedStatement = con.prepareStatement(query);
-
-            preparedStatement.setInt(1, id);
-            preparedStatement.setString(2, cats[0]);
-            preparedStatement.setString(3, cats[1]);
-            preparedStatement.setString(4, cats[2]);
-
-            preparedStatement.executeUpdate();
-
-        } catch (SQLException e) {
-            ErrorHandler.handleError(e, null);
-
-        } finally {
-            if (preparedStatement != null) {
-                preparedStatement.close();
-            }
-        }
-    }
-
-    public void insertEbayCategory(int catID, String catName) throws SQLException {
-
-        PreparedStatement preparedStatement = null;
-        String query = "INSERT INTO ebay_categories (cat_id, cat_name) "
-                + "VALUES(?, ?) "
-                + "ON DUPLICATE KEY "
-                + "UPDATE cat_id = VALUES(cat_id), cat_name = VALUES(cat_name);";
-
-        try {
-            preparedStatement = con.prepareStatement(query);
-
-            preparedStatement.setInt(1, catID);
-            preparedStatement.setString(2, catName);
-
-            preparedStatement.executeUpdate();
-
-        } catch (SQLException e) {
-            ErrorHandler.handleError(e, null);
-
-        } finally {
-            if (preparedStatement != null) {
-                preparedStatement.close();
-            }
-        }
-    }
-
-    public void insertEbayUser(EbayUser user) throws SQLException {
-
-        PreparedStatement preparedStatement = null;
-        String query = "INSERT INTO ebay_user (user_name, feedback_count, "
-                + "feedback_positive_percent, location, country, zip, top_rated) "
-                + "VALUES(?, ?, ?, ?, ?, ?, ?) "
-                + "ON DUPLICATE KEY "
-                + "UPDATE "
-                + "feedback_count = VALUES(feedback_count), "
-                + "feedback_positive_percent = VALUES(feedback_positive_percent),"
-                + "location = VALUES(location),"
-                + "country = VALUES(country),"
-                + "zip = VALUES(zip),"
-                + "top_rated = VALUES(top_rated);";
-
-        try {
-            preparedStatement = con.prepareStatement(query);
-            preparedStatement.setString(1, user.getUserName());
-            preparedStatement.setInt(2, user.getFeedbackCount());
-            preparedStatement.setShort(3, user.getFeedbackPercentPositive());
-            preparedStatement.setString(4, user.getLocation());
-            preparedStatement.setString(5, user.getCountry());
-            preparedStatement.setInt(6, user.getZipcode());
-            preparedStatement.setBoolean(7, user.isTopRated());
-
-            preparedStatement.executeUpdate();
-
-        } catch (SQLException e) {
-            ErrorHandler.handleError(e, "Ebay User: " + user.getUserName());
-
-        } finally {
-            if (preparedStatement != null) {
-                preparedStatement.close();
-            }
-        }
-    }
 
     private static java.sql.Timestamp getCurrentTimeStamp() {
 
@@ -277,132 +98,6 @@ public class DBConnect {
 
     }
 
-    public ArrayList<String> getSubCatItems(int subcatID) throws SQLException {
-        ArrayList<String> itemNumbers = new ArrayList<>();
-
-        String query = "SELECT item_number FROM item_list WHERE subcat_id = '"
-                + subcatID + "'";
-        rs = st.executeQuery(query);
-
-        while (rs.next()) {
-            itemNumbers.add(rs.getString("item_number"));
-        }
-
-        return itemNumbers;
-    }
-
-    public ArrayList<Subcategory> getAllSubCats() throws SQLException {
-        ArrayList<Subcategory> subCats = new ArrayList<>();
-
-        String query = "SELECT id, store, category, subcategory FROM newegg_categories";
-        rs = st.executeQuery(query);
-
-        while (rs.next()) {
-            int id = rs.getInt("id");
-            String store = rs.getString("store");
-            String category = rs.getString("category");
-            String subcategory = rs.getString("subcategory");
-            Subcategory temp = new Subcategory(id, store, category, subcategory);
-            subCats.add(temp);
-        }
-
-        return subCats;
-    }
-
-    public String getSubCatName(int subcatID) throws SQLException {
-
-        String query = "SELECT subcategory FROM newegg_categories WHERE id = '"
-                + subcatID + "'";
-        rs = st.executeQuery(query);
-
-        if (rs.next()) {
-            return rs.getString("subcategory");
-        }
-        return "";
-    }
-
-    public ArrayList<Item> getLimitedItemsBySubCat(int subCatID) throws SQLException {
-        ArrayList<Item> items = new ArrayList<>();
-
-        String query = "SELECT item_number, name, manufacturer, subcategory, price "
-                + "FROM item_list "
-                + "WHERE subcat_id = " + subCatID;
-        rs = st.executeQuery(query);
-
-        while (rs.next()) {
-            String itemNum = rs.getString("item_number");
-            String name = rs.getString("name");
-            String manufacturer = rs.getString("manufacturer");
-            String category = rs.getString("subcategory");
-            int price = rs.getInt("price");
-            Item temp = new Item(itemNum, name, manufacturer, category, price);
-            items.add(temp);
-        }
-
-        return items;
-    }
-
-    public ArrayList<Item> getLimitedItemsBySearchString(String str) throws SQLException {
-        ArrayList<Item> items = new ArrayList<>();
-
-        String query = "SELECT item_number, name, manufacturer, subcategory, price "
-                + "FROM item_list "
-                + "WHERE item_number LIKE '%" + str + "%' "
-                + "OR name LIKE '%" + str + "%' "
-                + "OR manufacturer LIKE '%" + str + "%' "
-                + "OR subcategory LIKE '%" + str + "%'";
-        rs = st.executeQuery(query);
-
-        while (rs.next()) {
-            String itemNum = rs.getString("item_number");
-            String name = rs.getString("name");
-            String manufacturer = rs.getString("manufacturer");
-            String category = rs.getString("subcategory");
-            int price = rs.getInt("price");
-            Item temp = new Item(itemNum, name, manufacturer, category, price);
-            items.add(temp);
-        }
-
-        return items;
-    }
-
-    public ArrayList<Item> getLimitedItemsByItemNumber(String str) throws SQLException {
-        ArrayList<Item> items = new ArrayList<>();
-
-        String query = "SELECT item_number, name, manufacturer, subcategory, price "
-                + "FROM item_list "
-                + "WHERE item_number LIKE '" + str + "%'";
-        rs = st.executeQuery(query);
-
-        while (rs.next()) {
-            String itemNum = rs.getString("item_number");
-            String name = rs.getString("name");
-            String manufacturer = rs.getString("manufacturer");
-            String category = rs.getString("subcategory");
-            int price = rs.getInt("price");
-            Item temp = new Item(itemNum, name, manufacturer, category, price);
-            items.add(temp);
-        }
-
-        return items;
-    }
-
-    public void getData() {
-        try {
-
-            String query = "SELECT * FROM people";
-            rs = st.executeQuery(query);
-
-            while (rs.next()) {
-                String name = rs.getString("Name");
-                String age = rs.getString("Age");
-                System.out.println("Name: " + name + " Age: " + age);
-            }
-
-        } catch (SQLException ex) {
-            ErrorHandler.handleError(ex, null);
-        }
-    }
 
     @Override
     protected void finalize() throws Throwable {
