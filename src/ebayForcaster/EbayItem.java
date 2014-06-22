@@ -78,7 +78,7 @@ public class EbayItem {
 
 
 
-	public int getEbayItemID() {
+	public String getEbayItemID() {
 		return ebayItemID;
 	}
 
@@ -86,7 +86,7 @@ public class EbayItem {
 
 
 
-	public void setEbayItemID(int ebayItemID) {
+	public void setEbayItemID(String ebayItemID) {
 		this.ebayItemID = ebayItemID;
 	}
 
