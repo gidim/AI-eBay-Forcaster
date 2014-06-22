@@ -1,50 +1,51 @@
+package ebayForcaster;
+
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
+import com.jayway.jsonpath.JsonPath;
+import net.minidev.json.JSONObject;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
-/**
- *
- * @author dealfinder
- */
+
 public class JsonItemParser {
 
     private JsonParser parser;
+    private List <EbayItem> items;
 
-    public JsonItemParser() {
-        parser = new JsonParser();
+
+    public JsonItemParser(String str) {
+
+
+        List<JSONObject> JsonItems = JsonPath.read(str, "findCompletedItemsResponse.[*].searchResult.[*].item.[*]");
+
+
+        for(JSONObject jsonItem : JsonItems){
+            boolean bestOffer = Boolean.parseBoolean((String)JsonPath.read(jsonItem, "listingInfo.[0].bestOfferEnabled.[0]"));
+            String itemId = (String)JsonPath.read(jsonItem, "itemId.[0]");
+            String name = (String)JsonPath.read(jsonItem, "title.[0]");
+            String catID = (String)JsonPath.read(jsonItem, "primaryCategory.[0].categoryId.[0]");
+
+            EbayItem item = new EbayItem();
+
+            //items.add("hasd").
+
+
+        }
+
+
     }
 
-    public ArrayList<EbayItem> parseEbayItems(String jsonInputString) {
 
-        return null;
-    }
 
-    private EbayUser parseEbayUser(String jsonItemString) {
-
-        int ebayItemID;
-        String neweggItemNumber;
-        String name;
-        int catID;
-        int productID;
-        String imageThumbURL;
-        int price;
-        short shipping;
-        boolean buyItNow;
-        boolean bestOffer;
-        short bids;
-        short conditionID;
-        String seller;
-        String listingType;
-        Date startTime;
-        Date endTime;
-        String searchTerm;
-
-        JsonObject rootObj = parser.parse(jsonItemString).getAsJsonObject();
-
-    //Get Ebay Item ID
-        return null;
-    }
 
 }

@@ -1,4 +1,7 @@
-package ebayForcaster;
+
+/*
+ * pebayForcasterackage ebayForcaster;
+ 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -11,10 +14,7 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.Locale;
 
-/**
- *
- * @author dealfinder
- */
+
 public class DBConnect {
 
     String DRIVER = "com.mysql.jdbc.Driver";
@@ -167,3 +167,5 @@ public class DBConnect {
     }
 
 }
+
+*/
