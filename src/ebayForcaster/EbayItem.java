@@ -4,27 +4,27 @@ import java.util.Date;
 
 /**
  *
- * @author dealfinder
+ *
  */
 public class EbayItem {
     
-    private int ebayItemID;
+    private String ebayItemID;
     private String name;
     private int catID;
     private int productID;
     private int zipcode;
     private String country;
     private int feedbackCount;
-    private short feedbackPercentPositive;
+    private int feedbackPercentPositive;
     private String feedbackRatingStar;
     private boolean topRatedSeller;
-    private short shipping;
+    private int shipping;
     private String shippingType;
     private boolean expediatedShipping;
     private boolean oneDayShippingAvailable;
     private int handlingTime;
     private int price;
-    private short bids;
+    private int bids;
     private boolean bestOffer;
     private boolean buyItNow;
     private Date startTime;
@@ -37,7 +37,7 @@ public class EbayItem {
     
     
 
-    
+    /*
     public EbayItem(int ebayItemID, String name, int catID, int productID,
 			int zipcode, String country, int feedbackCount,
 			short feedbackPercentPositive, String feedbackRatingStar,
@@ -74,7 +74,7 @@ public class EbayItem {
 		this.topRatedListing = topRatedListing;
 	}
 
-
+*/
 
 
 
@@ -190,7 +190,7 @@ public class EbayItem {
 
 
 
-	public short getFeedbackPercentPositive() {
+	public int getFeedbackPercentPositive() {
 		return feedbackPercentPositive;
 	}
 
@@ -238,7 +238,7 @@ public class EbayItem {
 
 
 
-	public short getShipping() {
+	public int getShipping() {
 		return shipping;
 	}
 
@@ -246,7 +246,7 @@ public class EbayItem {
 
 
 
-	public void setShipping(short shipping) {
+	public void setShipping(int shipping) {
 		this.shipping = shipping;
 	}
 
@@ -334,7 +334,7 @@ public class EbayItem {
 
 
 
-	public short getBids() {
+	public int getBids() {
 		return bids;
 	}
 

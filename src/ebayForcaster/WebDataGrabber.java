@@ -1,3 +1,6 @@
+package ebayForcaster;
+
+
 import java.io.IOException;
 import org.apache.http.HttpException;
 import org.apache.http.HttpResponse;
@@ -35,34 +38,13 @@ public class WebDataGrabber {
         responseHandler = new BasicResponseHandler();
     }
 
-    public String getURL(String urlString, boolean useCookies,
-            boolean mobileUserAgent, boolean jsonHeader) throws IOException,
+    public String getURL(String urlString ) throws IOException,
             HttpException {
         HttpGet request = new HttpGet(urlString);
 
         //Use defualt configuration fo timeout handling
         request.setConfig(defaultReqConfig);
 
-        if (useCookies == false) {
-            // set the cookie policy to disable cookies
-            request.getParams().setParameter(ClientPNames.COOKIE_POLICY, CookiePolicy.IGNORE_COOKIES);
-        }
-
-        if (mobileUserAgent == true) {
-            // Forge request header to match iPhone app
-            request.addHeader("Accept-Language", "en-us");
-            request.addHeader("User-Agent", "iPhone App / 4.0.0");
-            request.addHeader("Pragma", "no-cache");
-        } else {
-            request.addHeader("Accept-Language", "en-us");
-            request.addHeader("User-Agent", "Mozilla/5.0 (Windows NT 6.1; WOW64)"
-                    + " AppleWebKit/537.36 (KHTML, like Gecko)"
-                    + " Chrome/33.0.1750.154 Safari/537.36");
-        }
-        if (jsonHeader) {
-            request.addHeader("Accept", "application/json");
-            request.addHeader("Content-Type", "application/json");
-        }
 
         HttpResponse response = client.execute(request);
 
