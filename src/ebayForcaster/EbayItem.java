@@ -27,7 +27,6 @@ public class EbayItem {
     private int bids;
     private boolean bestOffer;
     private boolean buyItNow;
-    private Date startTime;
     private Date endTime;
     private String listingType;
     private boolean returnsAccepted;
@@ -35,16 +34,13 @@ public class EbayItem {
     private boolean topRatedListing;
 
     
-    
-
-    /*
-    public EbayItem(int ebayItemID, String name, int catID, int productID,
+    public EbayItem(String ebayItemID, String name, int catID, int productID,
 			int zipcode, String country, int feedbackCount,
-			short feedbackPercentPositive, String feedbackRatingStar,
-			boolean topRatedSeller, short shipping, String shippingType,
+			int feedbackPercentPositive, String feedbackRatingStar,
+			boolean topRatedSeller, int shipping, String shippingType,
 			boolean expediatedShipping, boolean oneDayShippingAvailable,
-			int handlingTime, int price, short bids, boolean bestOffer,
-			boolean buyItNow, Date startTime, Date endTime, String listingType,
+			int handlingTime, int price, int bids, boolean bestOffer,
+			boolean buyItNow, Date endTime, String listingType,
 			boolean returnsAccepted, int conditionID, boolean topRatedListing) {
 		super();
 		this.ebayItemID = ebayItemID;
@@ -66,7 +62,6 @@ public class EbayItem {
 		this.bids = bids;
 		this.bestOffer = bestOffer;
 		this.buyItNow = buyItNow;
-		this.startTime = startTime;
 		this.endTime = endTime;
 		this.listingType = listingType;
 		this.returnsAccepted = returnsAccepted;
@@ -74,11 +69,9 @@ public class EbayItem {
 		this.topRatedListing = topRatedListing;
 	}
 
-*/
 
 
-
-	public int getEbayItemID() {
+	public String getEbayItemID() {
 		return ebayItemID;
 	}
 
@@ -86,7 +79,7 @@ public class EbayItem {
 
 
 
-	public void setEbayItemID(int ebayItemID) {
+	public void setEbayItemID(String ebayItemID) {
 		this.ebayItemID = ebayItemID;
 	}
 
@@ -198,7 +191,7 @@ public class EbayItem {
 
 
 
-	public void setFeedbackPercentPositive(short feedbackPercentPositive) {
+	public void setFeedbackPercentPositive(int feedbackPercentPositive) {
 		this.feedbackPercentPositive = feedbackPercentPositive;
 	}
 
@@ -342,7 +335,7 @@ public class EbayItem {
 
 
 
-	public void setBids(short bids) {
+	public void setBids(int bids) {
 		this.bids = bids;
 	}
 
@@ -376,22 +369,6 @@ public class EbayItem {
 
 	public void setBuyItNow(boolean buyItNow) {
 		this.buyItNow = buyItNow;
-	}
-
-
-
-
-
-	public Date getStartTime() {
-		return startTime;
-	}
-
-
-
-
-
-	public void setStartTime(Date startTime) {
-		this.startTime = startTime;
 	}
 
 
