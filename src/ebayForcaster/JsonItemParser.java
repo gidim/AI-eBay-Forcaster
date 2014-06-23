@@ -1,8 +1,5 @@
 package ebayForcaster;
 
-import com.google.gson.JsonElement;
-import com.google.gson.JsonObject;
-import com.google.gson.JsonParser;
 import com.jayway.jsonpath.JsonPath;
 import net.minidev.json.JSONObject;
 
