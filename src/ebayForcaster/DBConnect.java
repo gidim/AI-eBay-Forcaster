@@ -114,7 +114,7 @@ public class DBConnect {
 
 	public ArrayList<EbayItem> getEbayItems(String productId)
 			throws SQLException, ParseException {
-		ArrayList<EbayItem> items = new ArrayList<>();
+		ArrayList<EbayItem> items = new ArrayList<EbayItem>();
 
 		String query = "SELECT * " + "FROM Items " + "WHERE sproductId = "
 				+ productId;
