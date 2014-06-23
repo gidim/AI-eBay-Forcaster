@@ -1,6 +1,6 @@
 
 /*
- * pebayForcasterackage ebayForcaster;
+ * pebayForcasterackage
  
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -8,7 +8,11 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
+import java.util.Locale;
 
 
 public class DBConnect {
@@ -102,6 +106,53 @@ public class DBConnect {
             }
         }
         }
+    }
+    
+    public ArrayList<EbayItem> getLimitedItemsBySubCat(String productId) throws SQLException, ParseException {
+        ArrayList<EbayItem> items = new ArrayList<>();
+
+        String query = "SELECT * "
+                + "FROM Items "
+                + "WHERE sproductId = " + productId;
+        rs = st.executeQuery(query);
+
+        while (rs.next()) {
+        	int ebayItemID = rs.getInt("itemId");
+            String name = rs.getString("title");
+            int catID = rs.getInt("categoryId");
+             int productID = rs.getInt("productId");
+             int zipcode = rs.getInt("postalCode");
+             String country = rs.getString("country");
+             int feedbackCount = rs.getInt("feedbackScore");
+             int feedbackPercentPositive = rs.getInt("positiveFeedbackPercent");
+             String feedbackRatingStar = rs.getString("feedbackRatingStar");
+             boolean topRatedSeller = rs.getBoolean("topRatedSeller");
+             int shipping = rs.getInt("shippingServiceCost");
+             String shippingType = rs.getString("shippingType");
+             boolean expediatedShipping = rs.getBoolean("expediatedShipping");
+             boolean oneDayShippingAvailable = rs.getBoolean("oneDayShippingAvailable");
+             int handlingTime = rs.getInt("handlingTime");
+             int price = rs.getInt("convertedCurrentPrice");
+             int bids = rs.getInt("bidCount");
+             boolean bestOffer = rs.getBoolean("bestOfferEnabled");
+             boolean buyItNow = rs.getBoolean("buyItNowAvailable");
+             Date endTime = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.ENGLISH).parse(rs.getString("endTime"));
+             String listingType = rs.getString("listingType");
+             boolean returnsAccepted = rs.getBoolean("returnsAccepted");
+             int conditionID = rs.getInt("conditionId");
+             boolean topRatedListing = rs.getBoolean("topRatedListing");
+            EbayItem temp = new EbayItem(ebayItemID, name, catID, productID,
+        			zipcode, country, feedbackCount,
+        			feedbackPercentPositive, feedbackRatingStar,
+        			topRatedSeller, shipping, shippingType,
+        			expediatedShipping, oneDayShippingAvailable,
+        			handlingTime, price, bids, bestOffer,
+        			buyItNow, endTime, listingType,
+        			returnsAccepted, conditionID, topRatedListing);
+            items.add(temp);
+        }
+
+        return items;
     }
 
 
