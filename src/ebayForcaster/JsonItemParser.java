@@ -19,8 +19,7 @@ import java.util.Locale;
 
 public class JsonItemParser {
 
-    private JsonParser parser;
-    private List <EbayItem> items;
+    private ArrayList <EbayItem> items;
 
 
     public JsonItemParser(String str) throws ParseException {
@@ -70,7 +69,7 @@ public class JsonItemParser {
 
     }
 
-    public List getItems(){
+    public ArrayList getItems(){
         return this.items;
     }
 

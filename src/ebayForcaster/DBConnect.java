@@ -76,21 +76,21 @@ public class DBConnect {
 				preparedStatement = con.prepareStatement(query);
 				preparedStatement.setString(1, item.getEbayItemID());
 				preparedStatement.setString(2, item.getName());
-				preparedStatement.setInt(3, item.getCatID());
-				preparedStatement.setInt(4, item.getProductID());
+				preparedStatement.setString(3, item.getCatID());
+				preparedStatement.setString(4, item.getProductID());
 				preparedStatement.setInt(5, item.getZipcode());
 				preparedStatement.setString(6, item.getCountry());
 				preparedStatement.setInt(7, item.getFeedbackCount());
-				preparedStatement.setInt(8, item.getFeedbackPercentPositive());
+				preparedStatement.setDouble(8, item.getFeedbackPercentPositive());
 				preparedStatement.setString(9, item.getFeedbackRatingStar());
 				preparedStatement.setBoolean(10, item.isTopRatedSeller());
-				preparedStatement.setInt(11, item.getShipping());
+				preparedStatement.setDouble(11, item.getShipping());
 				preparedStatement.setString(12, item.getShippingType());
 				preparedStatement.setBoolean(13, item.isExpediatedShipping());
 				preparedStatement.setBoolean(14,
 						item.isOneDayShippingAvailable());
 				preparedStatement.setInt(15, item.getHandlingTime());
-				preparedStatement.setInt(16, item.getPrice());
+				preparedStatement.setDouble(16, item.getPrice());
 				preparedStatement.setInt(17, item.getBids());
 				preparedStatement.setBoolean(18, item.isBestOffer());
 				preparedStatement.setBoolean(19, item.isBuyItNow());
@@ -123,21 +123,21 @@ public class DBConnect {
 		while (rs.next()) {
 			String ebayItemID = rs.getString("itemId");
 			String name = rs.getString("title");
-			int catID = rs.getInt("categoryId");
-			int productID = rs.getInt("productId");
+			String catID = rs.getString("categoryId");
+			String productID = rs.getString("productId");
 			int zipcode = rs.getInt("postalCode");
 			String country = rs.getString("country");
 			int feedbackCount = rs.getInt("feedbackScore");
-			int feedbackPercentPositive = rs.getInt("positiveFeedbackPercent");
+			double feedbackPercentPositive = rs.getDouble("positiveFeedbackPercent");
 			String feedbackRatingStar = rs.getString("feedbackRatingStar");
 			boolean topRatedSeller = rs.getBoolean("topRatedSeller");
-			int shipping = rs.getInt("shippingServiceCost");
+			double shipping = rs.getDouble("shippingServiceCost");
 			String shippingType = rs.getString("shippingType");
 			boolean expediatedShipping = rs.getBoolean("expediatedShipping");
 			boolean oneDayShippingAvailable = rs
 					.getBoolean("oneDayShippingAvailable");
 			int handlingTime = rs.getInt("handlingTime");
-			int price = rs.getInt("convertedCurrentPrice");
+			double price = rs.getDouble("convertedCurrentPrice");
 			int bids = rs.getInt("bidCount");
 			boolean bestOffer = rs.getBoolean("bestOfferEnabled");
 			boolean buyItNow = rs.getBoolean("buyItNowAvailable");
