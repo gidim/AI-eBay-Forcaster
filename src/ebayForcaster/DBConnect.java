@@ -62,9 +62,9 @@ public class DBConnect {
 
             PreparedStatement preparedStatement = null;
             String query = "INSERT INTO Item (itemId, title,"
-                    + "categoryId, productId, postalCode, country, feedbackScore"
-                    + "positiveFeedbackPercent, feedbackRatingStar, topRatedSeller"
-                    + "shippingServiceCost, shippingType, expediatedShipping"
+                    + "categoryId, productId, postalCode, country, feedbackScore,"
+                    + "positiveFeedbackPercent, feedbackRatingStar, topRatedSeller,"
+                    + "shippingServiceCost, shippingType, expeditedShipping,"
                     + "oneDayShippingAvailable, handlingTime, convertedCurrentPrice,"
                     + "bidCount, bestOfferEnabled, buyItNowAvailable, endTime,"
                     + "listingType, returnsAccepted, conditionId, topRatedListing) "
@@ -87,8 +87,7 @@ public class DBConnect {
                 preparedStatement.setDouble(11, item.getShippingPrice());
                 preparedStatement.setString(12, item.getShippingType());
                 preparedStatement.setBoolean(13, item.isExpediatedShipping());
-                preparedStatement.setBoolean(14,
-                        item.isOneDayShippingAvailable());
+                preparedStatement.setBoolean(14,item.isOneDayShippingAvailable());
                 preparedStatement.setInt(15, item.getHandlingTime());
                 preparedStatement.setDouble(16, item.getPrice());
                 preparedStatement.setInt(17, item.getBids());
