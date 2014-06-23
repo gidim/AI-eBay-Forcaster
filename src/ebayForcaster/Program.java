@@ -3,6 +3,8 @@ package ebayForcaster;
 import org.apache.http.HttpException;
 
 import java.io.IOException;
+import java.text.ParseException;
+import java.util.List;
 
 public class Program {
 
@@ -15,12 +17,19 @@ public class Program {
             JsonItemParser jp = new JsonItemParser(str);
 
 
+            List items = jp.getItems();
+
+
+
+
 
             //System.out.println(str);
 
         } catch (IOException e) {
             e.printStackTrace();
         } catch (HttpException e) {
+            e.printStackTrace();
+        } catch (ParseException e) {
             e.printStackTrace();
         }
 
