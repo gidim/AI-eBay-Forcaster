@@ -84,7 +84,7 @@ public class DBConnect {
 				preparedStatement.setDouble(8, item.getFeedbackPercentPositive());
 				preparedStatement.setString(9, item.getFeedbackRatingStar());
 				preparedStatement.setBoolean(10, item.isTopRatedSeller());
-				preparedStatement.setDouble(11, item.getShipping());
+				preparedStatement.setDouble(11, item.getShippingPrice());
 				preparedStatement.setString(12, item.getShippingType());
 				preparedStatement.setBoolean(13, item.isExpediatedShipping());
 				preparedStatement.setBoolean(14,
@@ -149,7 +149,7 @@ public class DBConnect {
 			boolean topRatedListing = rs.getBoolean("topRatedListing");
 			EbayItem temp = new EbayItem(ebayItemID, name, catID, productID,
 					zipcode, country, feedbackCount, feedbackPercentPositive,
-					feedbackRatingStar, topRatedSeller, shipping, shippingType,
+					feedbackRatingStar, topRatedSeller, shippingType, shipping,
 					expediatedShipping, oneDayShippingAvailable, handlingTime,
 					price, bids, bestOffer, buyItNow, endTime, listingType,
 					returnsAccepted, conditionID, topRatedListing);
