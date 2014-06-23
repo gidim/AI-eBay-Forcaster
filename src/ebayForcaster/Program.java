@@ -2,6 +2,10 @@ package ebayForcaster;
 
 import org.apache.http.HttpException;
 
+import weka.core.Instances;
+import weka.core.converters.ArffSaver;
+
+import java.io.File;
 import java.io.IOException;
 import java.sql.SQLException;
 import java.text.ParseException;
@@ -24,6 +28,18 @@ public class Program {
             ArrayList items = jp.getItems();
             db.insertEbayItems(items);
             
+            /*
+            try {
+				Instances data = db.getWekaInstance(96312835, true, true, true, true, true);
+				ArffSaver saver = new ArffSaver();
+	            saver.setInstances(data);
+	            saver.setFile(new File("output.arff"));
+	            saver.writeBatch();
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			*/
             
 
             //System.out.println(str);

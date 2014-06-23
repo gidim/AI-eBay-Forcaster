@@ -39,7 +39,15 @@ public class EbayItem {
         super();
     }
 
-    public EbayItem(String ebayItemID, String name, String catID, String productID,
+    public double getShippingPrice() {
+		return shippingPrice;
+	}
+
+	public void setShippingPrice(double shippingPrice) {
+		this.shippingPrice = shippingPrice;
+	}
+
+	public EbayItem(String ebayItemID, String name, String catID, String productID,
 			int zipcode, String country, int feedbackCount,
 			double feedbackPercentPositive, String feedbackRatingStar,
 			boolean topRatedSeller, String shippingType, double shippingPrice,
