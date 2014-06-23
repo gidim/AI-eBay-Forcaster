@@ -38,7 +38,7 @@ public class WebDataGrabber {
         responseHandler = new BasicResponseHandler();
     }
 
-    public String getURL(String urlString ) throws IOException,
+    public String getURL(String urlString) throws IOException,
             HttpException {
         HttpGet request = new HttpGet(urlString);
 
