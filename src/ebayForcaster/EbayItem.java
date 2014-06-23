@@ -457,4 +457,26 @@ public class EbayItem {
         }
         return false;
     }
+
+	@Override
+	public String toString() {
+		return "\n\nEbayItem [ebayItemID=" + ebayItemID + ", name=" + name
+				+ ", catID=" + catID + ", productID=" + productID
+				+ ", zipcode=" + zipcode + ", country=" + country
+				+ ", feedbackCount=" + feedbackCount
+				+ ", feedbackPercentPositive=" + feedbackPercentPositive
+				+ ", feedbackRatingStar=" + feedbackRatingStar
+				+ ", topRatedSeller=" + topRatedSeller + ", shippingPrice="
+				+ shippingPrice + ", shippingType=" + shippingType
+				+ ", expediatedShipping=" + expediatedShipping
+				+ ", oneDayShippingAvailable=" + oneDayShippingAvailable
+				+ ", handlingTime=" + handlingTime + ", price=" + price
+				+ ", bids=" + bids + ", bestOffer=" + bestOffer + ", buyItNow="
+				+ buyItNow + ", endTime=" + endTime + ", listingType="
+				+ listingType + ", returnsAccepted=" + returnsAccepted
+				+ ", conditionID=" + conditionID + ", topRatedListing="
+				+ topRatedListing + "]";
+	}
+	
+	
 }

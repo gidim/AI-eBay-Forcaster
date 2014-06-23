@@ -61,19 +61,19 @@ public class DBConnect {
         for (EbayItem item : itemList) {
 
             PreparedStatement preparedStatement = null;
-            String query = "INSERT INTO ebay_item_list (itemId, title,"
+            String query = "INSERT INTO Item (itemId, title,"
                     + "categoryId, productId, postalCode, country, feedbackScore"
                     + "positiveFeedbackPercent, feedbackRatingStar, topRatedSeller"
                     + "shippingServiceCost, shippingType, expediatedShipping"
                     + "oneDayShippingAvailable, handlingTime, convertedCurrentPrice,"
                     + "bidCount, bestOfferEnabled, buyItNowAvailable, endTime,"
                     + "listingType, returnsAccepted, conditionId, topRatedListing) "
-                    + "VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, "
-                    + "?, ?, ?, ?, ?, ?) " + "ON DUPLICATE KEY "
-                    + "ebay_item_id = ebay_item_id;";
+                    + "VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,"
+                    + "?,?,?,?,?,?);";
 
             try {
                 preparedStatement = con.prepareStatement(query);
+                
                 preparedStatement.setString(1, item.getEbayItemID());
                 preparedStatement.setString(2, item.getName());
                 preparedStatement.setString(3, item.getCatID());
@@ -103,7 +103,7 @@ public class DBConnect {
                 preparedStatement.executeUpdate();
 
             } catch (SQLException e) {
-
+            	e.printStackTrace();
             } finally {
                 if (preparedStatement != null) {
                     preparedStatement.close();
@@ -198,6 +198,17 @@ public class DBConnect {
         query.setQuery(queryString);
 
         return query.retrieveInstances();
+    }
+    
+    public void getData() throws SQLException {
+            String query = "SELECT * FROM Item";
+            rs = st.executeQuery(query);
+
+            while (rs.next()) {
+                String name = rs.getString("itemId");
+                System.out.println("ID: " + name);
+            }
+
     }
 
     @Override
