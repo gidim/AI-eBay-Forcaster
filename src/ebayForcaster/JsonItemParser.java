@@ -19,7 +19,6 @@ import java.util.Locale;
 
 public class JsonItemParser {
 
-    private JsonParser parser;
     private List <EbayItem> items;
 
 
@@ -43,6 +42,8 @@ public class JsonItemParser {
             String feedbackRatingStarStr = (String)JsonPath.read(jsonItem, "sellerInfo.[0].feedbackRatingStar.[0]");
             boolean topRatedSeller = Boolean.parseBoolean((String)JsonPath.read(jsonItem, "sellerInfo.[0].topRatedSeller.[0]"));
             boolean expediatedShipping = Boolean.parseBoolean((String)JsonPath.read(jsonItem, "shippingInfo.[0].expeditedShipping.[0]"));
+            double shippingPrice = Double.parseDouble((String)JsonPath.read(jsonItem, "shippingInfo.[0].shippingServiceCost.[0].__value__"));
+
             boolean oneDayShippingAvailable = Boolean.parseBoolean((String)JsonPath.read(jsonItem, "shippingInfo.[0].oneDayShippingAvailable.[0]"));
             int handlingTime = Integer.parseInt((String)JsonPath.read(jsonItem,"shippingInfo.[0].handlingTime.[0]"));
             double price = Double.parseDouble((String) JsonPath.read(jsonItem, "sellingStatus.[0].currentPrice.[0].__value__"));
@@ -62,7 +63,7 @@ public class JsonItemParser {
             boolean topRatedListing = Boolean.parseBoolean((String)JsonPath.read(jsonItem, "topRatedListing.[0]"));
 
 
-            EbayItem item = new EbayItem(itemId,name,catID,prodctId,zipCode,country,feedbackCount,feedbackPercentPositive,feedbackRatingStarStr,topRatedSeller,null,expediatedShipping,oneDayShippingAvailable,handlingTime,price,bids,bestOffer,buyItNow,endTime,listingType,returnsAccepted,conditionID,topRatedListing);
+            EbayItem item = new EbayItem(itemId,name,catID,prodctId,zipCode,country,feedbackCount,feedbackPercentPositive,feedbackRatingStarStr,topRatedSeller,null,shippingPrice,expediatedShipping,oneDayShippingAvailable,handlingTime,price,bids,bestOffer,buyItNow,endTime,listingType,returnsAccepted,conditionID,topRatedListing);
             items.add(item);
 
         }

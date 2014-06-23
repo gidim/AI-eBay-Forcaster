@@ -18,6 +18,7 @@ public class EbayItem {
     double  feedbackPercentPositive;
     private String feedbackRatingStar;
     private boolean topRatedSeller;
+    private double shippingPrice;
     private String shippingType;
     private boolean expediatedShipping;
     private boolean oneDayShippingAvailable;
@@ -41,7 +42,7 @@ public class EbayItem {
     public EbayItem(String ebayItemID, String name, String catID, String productID,
 			int zipcode, String country, int feedbackCount,
 			double feedbackPercentPositive, String feedbackRatingStar,
-			boolean topRatedSeller, String shippingType,
+			boolean topRatedSeller, String shippingType, double shippingPrice,
 			boolean expediatedShipping, boolean oneDayShippingAvailable,
 			int handlingTime, double price, int bids, boolean bestOffer,
 			boolean buyItNow, Date endTime, String listingType,
