@@ -21,8 +21,8 @@ import weka.experiment.InstanceQuery;
 public class DBConnect {
 
 	String DRIVER = "com.mysql.jdbc.Driver";
-	String LOCATION = "http://107.170.18.96/";
-	String DATABASE = "Item";
+	String LOCATION = "107.170.18.96:3306";
+	String DATABASE = "ebayForcaster";
 	String USER = "ebay";
 	String PASSWORD = "ebay3344";
 
