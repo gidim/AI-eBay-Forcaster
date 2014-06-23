@@ -17,7 +17,7 @@ public class Program {
     public static void main(String[] args) throws SQLException {
         // TODO Auto-generated method stub
 
-    	DBConnect db = new DBConnect();
+    	//DBConnect db = new DBConnect();
         WebDataGrabber wg = new WebDataGrabber();
         try {
 
@@ -26,7 +26,7 @@ public class Program {
 
 
             ArrayList items = jp.getItems();
-            db.insertEbayItems(items);
+           // db.insertEbayItems(items);
             
             /*
             try {

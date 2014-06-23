@@ -36,7 +36,13 @@ public class JsonItemParser {
             String itemId = (String)JsonPath.read(jsonItem, "itemId.[0]");
             String name = (String)JsonPath.read(jsonItem, "title.[0]");
             String catID = (String)JsonPath.read(jsonItem, "primaryCategory.[0].categoryId.[0]");
-            String prodctId = JsonPath.read(jsonItem, "productId.[0].__value__");
+
+            String prodctId;
+            if(jsonItem.toString().contains("productId"))
+                 prodctId = JsonPath.read(jsonItem, "productId.[0].__value__");
+            else
+                continue;
+
             int zipCode = Integer.parseInt((String) JsonPath.read(jsonItem, "postalCode.[0]"));
             String country = JsonPath.read(jsonItem, "country.[0]");
             int feedbackCount = Integer.parseInt((String)JsonPath.read(jsonItem, "sellerInfo.[0].feedbackScore.[0]"));
@@ -44,12 +50,25 @@ public class JsonItemParser {
             String feedbackRatingStarStr = (String)JsonPath.read(jsonItem, "sellerInfo.[0].feedbackRatingStar.[0]");
             boolean topRatedSeller = Boolean.parseBoolean((String)JsonPath.read(jsonItem, "sellerInfo.[0].topRatedSeller.[0]"));
             boolean expediatedShipping = Boolean.parseBoolean((String)JsonPath.read(jsonItem, "shippingInfo.[0].expeditedShipping.[0]"));
-            double shippingPrice = Double.parseDouble((String)JsonPath.read(jsonItem, "shippingInfo.[0].shippingServiceCost.[0].__value__"));
+
+
+            double shippingPrice;
+            if(jsonItem.toString().contains("shippingServiceCost"))
+                 shippingPrice = Double.parseDouble((String)JsonPath.read(jsonItem, "shippingInfo.[0].shippingServiceCost.[0].__value__"));
+
+            else
+                shippingPrice = 0;
 
             boolean oneDayShippingAvailable = Boolean.parseBoolean((String)JsonPath.read(jsonItem, "shippingInfo.[0].oneDayShippingAvailable.[0]"));
             int handlingTime = Integer.parseInt((String)JsonPath.read(jsonItem,"shippingInfo.[0].handlingTime.[0]"));
             double price = Double.parseDouble((String) JsonPath.read(jsonItem, "sellingStatus.[0].currentPrice.[0].__value__"));
-            int bids = Integer.parseInt((String)JsonPath.read(jsonItem,"sellingStatus.[0].bidCount.[0]"));
+
+            int bids;
+            if(jsonItem.toString().contains("bidCount"))
+                bids = Integer.parseInt((String)JsonPath.read(jsonItem,"sellingStatus.[0].bidCount.[0]"));
+            else
+                   bids = 0;
+
             boolean bestOffer = Boolean.parseBoolean((String)JsonPath.read(jsonItem, "listingInfo.[0].bestOfferEnabled.[0]"));
             boolean buyItNow = Boolean.parseBoolean((String)JsonPath.read(jsonItem, "listingInfo.[0].buyItNowAvailable.[0]"));
 
