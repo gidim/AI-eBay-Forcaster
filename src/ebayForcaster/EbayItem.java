@@ -1,315 +1,482 @@
+package ebayForcaster;
+
 import java.util.Date;
 
 /**
  *
- * @author dealfinder
+ *
  */
 public class EbayItem {
     
-    private int ebayItemID;
-    private String neweggItemNumber;
+    private String ebayItemID;
     private String name;
-    private int catID;
-    private int productID;
-    private String imageThumbURL;
-    private int price;
-    private short shipping;
-    private boolean buyItNow;
+    private String catID;
+    private String productID;
+    private int zipcode;
+    private String country;
+    private int feedbackCount;
+    double  feedbackPercentPositive;
+    private String feedbackRatingStar;
+    private boolean topRatedSeller;
+    private double shippingPrice;
+    private String shippingType;
+    private boolean expediatedShipping;
+    private boolean oneDayShippingAvailable;
+    private int handlingTime;
+    private double price;
+    private int bids;
     private boolean bestOffer;
-    private short bids;
-    private short conditionID;
-    private String seller;
-    private String listingType;
-    private Date startTime;
+    private boolean buyItNow;
     private Date endTime;
-    private String searchTerm;
+    private String listingType;
+    private boolean returnsAccepted;
+    private int conditionID;
+    private boolean topRatedListing;
 
-    /**
-     *
-     * @param ebayItemID
-     * @param itemNumber
-     * @param name
-     * @param catID
-     * @param productID
-     * @param imageThumbURL
-     * @param price
-     * @param shipping
-     * @param buyItNow
-     * @param bestOffer
-     * @param bids
-     * @param conditionID
-     * @param seller
-     * @param listingType
-     * @param startTime
-     * @param endTime
-     * @param searchTerm
-     */
-    public EbayItem(int ebayItemID, String itemNumber, String name, int catID,
-            int productID, String imageThumbURL, int price, short shipping,
-            boolean buyItNow, boolean bestOffer, short bids, short conditionID,
-            String seller, String listingType, Date startTime, Date endTime,
-            String searchTerm) {
-        this.ebayItemID = ebayItemID;
-        this.neweggItemNumber = itemNumber;
-        this.name = name;
-        this.catID = catID;
-        this.productID = productID;
-        this.imageThumbURL = imageThumbURL;
-        this.price = price;
-        this.shipping = shipping;
-        this.buyItNow = buyItNow;
-        this.bestOffer = bestOffer;
-        this.bids = bids;
-        this.conditionID = conditionID;
-        this.seller = seller;
-        this.listingType = listingType;
-        this.startTime = startTime;
-        this.endTime = endTime;
-        this.searchTerm = searchTerm;
+
+
+    public EbayItem(){
+        super();
     }
 
-    /**
-     * @return the ebayItemID
-     */
-    public int getEbayItemID() {
-        return ebayItemID;
-    }
+    public double getShippingPrice() {
+		return shippingPrice;
+	}
 
-    /**
-     * @param ebayItemID the ebayItemID to set
-     */
-    public void setEbayItemID(int ebayItemID) {
-        this.ebayItemID = ebayItemID;
-    }
+	public void setShippingPrice(double shippingPrice) {
+		this.shippingPrice = shippingPrice;
+	}
 
-    /**
-     * @return the itemNumber
-     */
-    public String getNeweggItemNumber() {
-        return neweggItemNumber;
-    }
+	public EbayItem(String ebayItemID, String name, String catID, String productID,
+			int zipcode, String country, int feedbackCount,
+			double feedbackPercentPositive, String feedbackRatingStar,
+			boolean topRatedSeller, String shippingType, double shippingPrice,
+			boolean expediatedShipping, boolean oneDayShippingAvailable,
+			int handlingTime, double price, int bids, boolean bestOffer,
+			boolean buyItNow, Date endTime, String listingType,
+			boolean returnsAccepted, int conditionID, boolean topRatedListing) {
+		super();
+		this.ebayItemID = ebayItemID;
+		this.name = name;
+		this.catID = catID;
+		this.productID = productID;
+		this.zipcode = zipcode;
+		this.country = country;
+		this.feedbackCount = feedbackCount;
+		this.feedbackPercentPositive = feedbackPercentPositive;
+		this.feedbackRatingStar = feedbackRatingStar;
+		this.topRatedSeller = topRatedSeller;
+		this.shippingType = shippingType;
+		this.expediatedShipping = expediatedShipping;
+		this.oneDayShippingAvailable = oneDayShippingAvailable;
+		this.handlingTime = handlingTime;
+		this.price = price;
+		this.bids = bids;
+		this.bestOffer = bestOffer;
+		this.buyItNow = buyItNow;
+		this.endTime = endTime;
+		this.listingType = listingType;
+		this.returnsAccepted = returnsAccepted;
+		this.conditionID = conditionID;
+		this.topRatedListing = topRatedListing;
+	}
 
-    /**
-     * @param itemNumber the itemNumber to set
-     */
-    public void setNeweggItemNumber(String itemNumber) {
-        this.neweggItemNumber = itemNumber;
-    }
 
-    /**
-     * @return the name
-     */
-    public String getName() {
-        return name;
-    }
 
-    /**
-     * @param name the name to set
-     */
-    public void setName(String name) {
-        this.name = name;
-    }
+	public String getEbayItemID() {
+		return ebayItemID;
+	}
 
-    /**
-     * @return the catID
-     */
-    public int getCatID() {
-        return catID;
-    }
 
-    /**
-     * @param catID the catID to set
-     */
-    public void setCatID(int catID) {
-        this.catID = catID;
-    }
 
-    /**
-     * @return the productID
-     */
-    public int getProductID() {
-        return productID;
-    }
 
-    /**
-     * @param productID the productID to set
-     */
-    public void setProductID(int productID) {
-        this.productID = productID;
-    }
 
-    /**
-     * @return the imageThumbURL
-     */
-    public String getImageThumbURL() {
-        return imageThumbURL;
-    }
+	public void setEbayItemID(String ebayItemID) {
+		this.ebayItemID = ebayItemID;
+	}
 
-    /**
-     * @param imageThumbURL the imageThumbURL to set
-     */
-    public void setImageThumbURL(String imageThumbURL) {
-        this.imageThumbURL = imageThumbURL;
-    }
 
-    /**
-     * @return the price
-     */
-    public int getPrice() {
-        return price;
-    }
 
-    /**
-     * @param price the price to set
-     */
-    public void setPrice(int price) {
-        this.price = price;
-    }
 
-    /**
-     * @return the shipping
-     */
-    public short getShipping() {
-        return shipping;
-    }
 
-    /**
-     * @param shipping the shipping to set
-     */
-    public void setShipping(short shipping) {
-        this.shipping = shipping;
-    }
+	public String getName() {
+		return name;
+	}
 
-    /**
-     * @return the buyItNow
-     */
-    public boolean isBuyItNow() {
-        return buyItNow;
-    }
 
-    /**
-     * @param buyItNow the buyItNow to set
-     */
-    public void setBuyItNow(boolean buyItNow) {
-        this.buyItNow = buyItNow;
-    }
 
-    /**
-     * @return the bestOffer
-     */
-    public boolean isBestOffer() {
-        return bestOffer;
-    }
 
-    /**
-     * @param bestOffer the bestOffer to set
-     */
-    public void setBestOffer(boolean bestOffer) {
-        this.bestOffer = bestOffer;
-    }
 
-    /**
-     * @return the bids
-     */
-    public short getBids() {
-        return bids;
-    }
+	public void setName(String name) {
+		this.name = name;
+	}
 
-    /**
-     * @param bids the bids to set
-     */
-    public void setBids(short bids) {
-        this.bids = bids;
-    }
 
-    /**
-     * @return the conditionID
-     */
-    public short getConditionID() {
-        return conditionID;
-    }
 
-    /**
-     * @param conditionID the conditionID to set
-     */
-    public void setConditionID(short conditionID) {
-        this.conditionID = conditionID;
-    }
 
-    /**
-     * @return the seller
-     */
-    public String getSeller() {
-        return seller;
-    }
 
-    /**
-     * @param seller the seller to set
-     */
-    public void setSeller(String seller) {
-        this.seller = seller;
-    }
+	public String getCatID() {
+		return catID;
+	}
 
-    /**
-     * @return the listingType
-     */
-    public String getListingType() {
-        return listingType;
-    }
 
-    /**
-     * @param listingType the listingType to set
-     */
-    public void setListingType(String listingType) {
-        this.listingType = listingType;
-    }
 
-    /**
-     * @return the startTime
-     */
-    public Date getStartTime() {
-        return startTime;
-    }
 
-    /**
-     * @param startTime the startTime to set
-     */
-    public void setStartTime(Date startTime) {
-        this.startTime = startTime;
-    }
 
-    /**
-     * @return the endTime
-     */
-    public Date getEndTime() {
-        return endTime;
-    }
+	public void setCatID(String catID) {
+		this.catID = catID;
+	}
 
-    /**
-     * @param endTime the endTime to set
-     */
-    public void setEndTime(Date endTime) {
-        this.endTime = endTime;
-    }
 
-    /**
-     * @return the searchTerm
-     */
-    public String getSearchTerm() {
-        return searchTerm;
-    }
 
-    /**
-     * @param searchTerm the searchTerm to set
-     */
-    public void setSearchTerm(String searchTerm) {
-        this.searchTerm = searchTerm;
-    }
-    
-    public boolean equals(EbayItem item) {
+
+
+	public String getProductID() {
+		return productID;
+	}
+
+
+
+
+
+	public void setProductID(String productID) {
+		this.productID = productID;
+	}
+
+
+
+
+
+	public int getZipcode() {
+		return zipcode;
+	}
+
+
+
+
+
+	public void setZipcode(int zipcode) {
+		this.zipcode = zipcode;
+	}
+
+
+
+
+
+	public String getCountry() {
+		return country;
+	}
+
+
+
+
+
+	public void setCountry(String country) {
+		this.country = country;
+	}
+
+
+
+
+
+	public int getFeedbackCount() {
+		return feedbackCount;
+	}
+
+
+
+
+
+	public void setFeedbackCount(int feedbackCount) {
+		this.feedbackCount = feedbackCount;
+	}
+
+
+
+
+
+	public double getFeedbackPercentPositive() {
+		return feedbackPercentPositive;
+	}
+
+
+
+
+
+	public void setFeedbackPercentPositive(double feedbackPercentPositive) {
+		this.feedbackPercentPositive = feedbackPercentPositive;
+	}
+
+
+
+
+
+	public String getFeedbackRatingStar() {
+		return feedbackRatingStar;
+	}
+
+
+
+
+
+	public void setFeedbackRatingStar(String feedbackRatingStar) {
+		this.feedbackRatingStar = feedbackRatingStar;
+	}
+
+
+
+
+
+	public boolean isTopRatedSeller() {
+		return topRatedSeller;
+	}
+
+
+
+
+
+	public void setTopRatedSeller(boolean topRatedSeller) {
+		this.topRatedSeller = topRatedSeller;
+	}
+
+
+
+
+
+	public String getShippingType() {
+		return shippingType;
+	}
+
+
+
+
+
+	public void setShippingType(String shippingType) {
+		this.shippingType = shippingType;
+	}
+
+
+
+
+
+	public boolean isExpediatedShipping() {
+		return expediatedShipping;
+	}
+
+
+
+
+
+	public void setExpediatedShipping(boolean expediatedShipping) {
+		this.expediatedShipping = expediatedShipping;
+	}
+
+
+
+
+
+	public boolean isOneDayShippingAvailable() {
+		return oneDayShippingAvailable;
+	}
+
+
+
+
+
+	public void setOneDayShippingAvailable(boolean oneDayShippingAvailable) {
+		this.oneDayShippingAvailable = oneDayShippingAvailable;
+	}
+
+
+
+
+
+	public int getHandlingTime() {
+		return handlingTime;
+	}
+
+
+
+
+
+	public void setHandlingTime(int handlingTime) {
+		this.handlingTime = handlingTime;
+	}
+
+
+
+
+
+	public double getPrice() {
+		return price;
+	}
+
+
+
+
+
+	public void setPrice(double price) {
+		this.price = price;
+	}
+
+
+
+
+
+	public int getBids() {
+		return bids;
+	}
+
+
+
+
+
+	public void setBids(int bids) {
+		this.bids = bids;
+	}
+
+
+
+
+
+	public boolean isBestOffer() {
+		return bestOffer;
+	}
+
+
+
+
+
+	public void setBestOffer(boolean bestOffer) {
+		this.bestOffer = bestOffer;
+	}
+
+
+
+
+
+	public boolean isBuyItNow() {
+		return buyItNow;
+	}
+
+
+
+
+
+	public void setBuyItNow(boolean buyItNow) {
+		this.buyItNow = buyItNow;
+	}
+
+
+
+
+
+	public Date getEndTime() {
+		return endTime;
+	}
+
+
+
+
+
+	public void setEndTime(Date endTime) {
+		this.endTime = endTime;
+	}
+
+
+
+
+
+	public String getListingType() {
+		return listingType;
+	}
+
+
+
+
+
+	public void setListingType(String listingType) {
+		this.listingType = listingType;
+	}
+
+
+
+
+
+	public boolean isReturnsAccepted() {
+		return returnsAccepted;
+	}
+
+
+
+
+
+	public void setReturnsAccepted(boolean returnsAccepted) {
+		this.returnsAccepted = returnsAccepted;
+	}
+
+
+
+
+
+	public int getConditionID() {
+		return conditionID;
+	}
+
+
+
+
+
+	public void setConditionID(int conditionID) {
+		this.conditionID = conditionID;
+	}
+
+
+
+
+
+	public boolean isTopRatedListing() {
+		return topRatedListing;
+	}
+
+
+
+
+
+	public void setTopRatedListing(boolean topRatedListing) {
+		this.topRatedListing = topRatedListing;
+	}
+
+
+
+
+
+	public boolean equals(EbayItem item) {
         if(item.ebayItemID == this.ebayItemID){
             return true;
         }
         return false;
     }
+
+	@Override
+	public String toString() {
+		return "\n\nEbayItem [ebayItemID=" + ebayItemID + ", name=" + name
+				+ ", catID=" + catID + ", productID=" + productID
+				+ ", zipcode=" + zipcode + ", country=" + country
+				+ ", feedbackCount=" + feedbackCount
+				+ ", feedbackPercentPositive=" + feedbackPercentPositive
+				+ ", feedbackRatingStar=" + feedbackRatingStar
+				+ ", topRatedSeller=" + topRatedSeller + ", shippingPrice="
+				+ shippingPrice + ", shippingType=" + shippingType
+				+ ", expediatedShipping=" + expediatedShipping
+				+ ", oneDayShippingAvailable=" + oneDayShippingAvailable
+				+ ", handlingTime=" + handlingTime + ", price=" + price
+				+ ", bids=" + bids + ", bestOffer=" + bestOffer + ", buyItNow="
+				+ buyItNow + ", endTime=" + endTime + ", listingType="
+				+ listingType + ", returnsAccepted=" + returnsAccepted
+				+ ", conditionID=" + conditionID + ", topRatedListing="
+				+ topRatedListing + "]";
+	}
+	
+	
 }
