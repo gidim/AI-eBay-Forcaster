@@ -10,7 +10,6 @@ jdbcDriver=RmiJdbc.RJDriver,jdbc.idbDriver,org.gjt.mm.mysql.Driver,com.mckoi.JDB
 #jdbcDriver=org.gjt.mm.mysql.Driver
 
 # The url to the experiment database
-# "localhost = hostname; 3306 = port; test = database name
 jdbcURL=jdbc:mysql://107.170.18.96/ebayForcaster
 
 
