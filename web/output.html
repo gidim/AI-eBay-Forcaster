@@ -28,6 +28,8 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
+	<!--chart js-->
+	<script src="charts/Chart.js"></script>
   </head>
 
   <body>
@@ -69,6 +71,46 @@
 								</div>				  
 								<div class="panel-body">						
 									<div class="container-fluid">
+										<div class="row">
+											<div class="col-sm-12" align="center">
+												<canvas id="canvas" height="300" width="450"></canvas>
+												
+	<script>
+
+		var lineChartData = {
+			labels : ["1 Day", "3 Days", "5 Days", "7 Days"],
+			datasets : [
+				{
+					fillColor : "rgba(220,220,220,0.5)",
+					strokeColor : "rgba(220,220,220,1)",
+					pointColor : "rgba(220,220,220,1)",
+					pointStrokeColor : "#fff",
+					data : [65,59,90,81]
+				},
+				{
+					fillColor : "rgba(151,187,205,0.5)",
+					strokeColor : "rgba(151,187,205,1)",
+					pointColor : "rgba(151,187,205,1)",
+					pointStrokeColor : "#fff",
+					data : [28,48,40,19]
+				},
+				{
+					fillColor : "rgba(136,190,255,0.5)",
+					strokeColor : "rgba(0,190,255,1)",
+					pointColor : "rgba(0,190,255,1)",
+					pointStrokeColor : "#fff",
+					data : [50, 30, 80, 22]
+				}
+			]
+			
+		}
+
+	var myLine = new Chart(document.getElementById("canvas").getContext("2d")).Line(lineChartData);
+	
+	</script>												
+												
+											</div>											
+										</div>
 										<div class="row">
 											<div class="col-sm-12">
 												<h2><small>Linear Regression</small></h2>
@@ -390,5 +432,7 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>	
 	<script src="js/bootstrap.min.js"></script>
+
+		
   </body>
 </html>
