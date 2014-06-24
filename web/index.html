@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="assets/ico/favicon.ico">
 
-    <title>eBayForecaster</title>
+    <title>ebayForecaster</title>
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -34,81 +34,97 @@
 		 
 		 <!-- cover image row -->
 		 <div class="row">
-			<div class="col-lg-12">
-				<img src="images/cover1.png" class="img-rounded img-responsive" style="border:1px solid grey;">
+			<div class="col-lg-1"></div>
+			<div class="col-lg-10">
+				<img src="images/logoTransparentPNG.png" class="img-rounded img-responsive" style="border:1px solid #428BCA;">
 			</div>
+			<div class="col-lg-1"></div>
 		 </div>
 		 <!-- end of cover image row -->
 		 
 		 <!-- content row -->
 		 <div class="row">
 			<!-- news column -->
-			<div class="col-lg-12">
+			<div class="col-lg-1"></div>
+			<div class="col-lg-10">
 				<div class="container-fluid">
 					<div class="row" style="padding-bottom:20px;">
 						<div class="col-lg-8">
 							<h1>Get Product Forecast</h1> <!-- header -->
 						</div>
 						<div class="col-lg-4 text-right">
-							<h1><small>eBayForecaster</small></h1>
+							<h1><small>ebayForecaster</small></h1>
 						</div>
 					</div>					
 					<!-- content -->					
 					<div class="row clearfix">
 						<div class="col-md-2"></div>
 						<div class="col-md-8">
-							<div class="row">
-							<form class="form" role="form">
-								<div class="form-group">
-									 <label for="inputProductID" class="col-sm-2 control-label">Product ID:</label>
-									<div class="col-sm-10">
-										<input type="productID" class="form-control" id="inputProductID" />
-									</div>
+							<div class="panel panel-primary">
+								<div class="panel-heading">
+									<h3 class="panel-title">Get Forecast</h3>
+								</div>				  
+								<div class="panel-body">														
+									<form class="form" role="form">
+										<div class="form-group">
+											 <label for="inputProductID" class="col-sm-3 control-label">Product ID:</label>
+											<div class="col-sm-9">
+												<input type="productID" class="form-control" id="inputProductID" />
+											</div>
+										</div>									
+										<div class="form-group">
+											<label for="btnGroupCondition" class="col-sm-3 control-label">Filters:</label>										
+											<div class="col-sm-9">
+												<div class="btn-group" data-toggle="buttons" id="btnGroupCondition" style="padding-top:10px;">
+												  <label class="btn btn-primary">
+													<input type="checkbox"> New
+												  </label>
+												  <label class="btn btn-primary">
+													<input type="checkbox"> New Other
+												  </label>
+												  <label class="btn btn-primary">
+													<input type="checkbox"> Used
+												  </label>
+												</div>
+											</div>																				
+										</div>
+										<div class="form-group">																				
+											<div class="col-sm-offset-3 col-sm-9">											
+											<div class="btn-group" data-toggle="buttons" id="btnGroupBuyTime" style="padding-top:5px;">
+											  <label class="btn btn-success">
+												<input type="checkbox"> Buy Now
+											  </label>
+											  <label class="btn btn-success">
+												<input type="checkbox"> Auction
+											  </label>  
+											</div>									
+											</div>
+										</div>
+										<div class="form-group">	
+											<label for="btnGroupMode" class="col-sm-3 control-label">Mode:</label>																				
+											<div class="col-sm-9">											
+											<div class="btn-group" data-toggle="buttons" id="btnGroupMode" style="padding-top:10px;">
+											  <label class="btn btn-info">
+												<input type="checkbox"> Accuracy Mode
+											  </label> 
+											</div>									
+											</div>											
+										</div>								
+										<div class="form-group">
+											<div class="col-sm-offset-3 col-sm-9" style="padding-top:10px;">
+												 <button type="submit" class="btn btn-default">Search</button>
+											</div>
+										</div>
+									</form>
 								</div>
 							</div>
-								<div class="form-group">
-									<div class="row" style="padding-top:40px;">										
-										<div class="col-sm-2"></div>
-										<div class="col-sm-8">
-											<label class="checkbox-inline">
-											  <input type="checkbox" id="checkboxNew" value="new"> New
-											</label>
-											<label class="checkbox-inline">
-											  <input type="checkbox" id="checkBoxNewOther" value="newOther"> New Other
-											</label>
-											<label class="checkbox-inline">
-											  <input type="checkbox" id="checkboxUsed" value="used"> Used
-											</label>
-										</div>									
-										<div class="col-sm-2"></div>
-									</div>
-								</div>
-								<div class="form-group">
-									<div class="row">
-										<div class="col-sm-2"></div>
-										<div class="col-sm-8">
-											<label class="checkbox-inline">
-											  <input type="checkbox" id="buyNow" value="buyNow"> Buy Now
-											</label>
-											<label class="checkbox-inline">
-											  <input type="checkbox" id="auction" value="auction"> Auction
-											</label>										
-										</div>
-										<div class="col-sm-2"></div>
-									</div>
-								</div>
-								<div class="form-group">
-									<div class="col-sm-offset-2 col-sm-10" style="padding-top:10px;">
-										 <button type="submit" class="btn btn-default">Search</button>
-									</div>
-								</div>
-							</form>
-						</div>
+						</div>							
 						<div class="col-md-2"></div>
 					</div>						
 					<!-- end of content -->
 				</div>
 			</div>
+			<div class="col-lg-1"></div>
 			<!-- end of news column -->			
 			
 		 </div>		
