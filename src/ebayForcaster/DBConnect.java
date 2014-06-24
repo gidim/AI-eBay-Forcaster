@@ -69,7 +69,7 @@ public class DBConnect {
                     + "bidCount, bestOfferEnabled, buyItNowAvailable, endTime,"
                     + "listingType, returnsAccepted, conditionId, topRatedListing) "
                     + "VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,"
-                    + "?,?,?,?,?,?);";
+                    + "?,?,?,?,?,?) ON DUPLICATE KEY UPDATE itemId=VALUES(itemId);";
 
             try {
                 preparedStatement = con.prepareStatement(query);
