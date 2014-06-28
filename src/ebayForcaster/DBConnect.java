@@ -194,7 +194,7 @@ public class DBConnect {
 						query += " AND listingType = " + auction;
 					}
 					query += ";";
-					*/
+
         InstanceQuery query = new InstanceQuery();
         query.setUsername("ebay");
         query.setPassword("ebay3344");
@@ -202,7 +202,7 @@ public class DBConnect {
 
         return query.retrieveInstances();
     }
-    
+
     public void getData() throws SQLException {
             String query = "SELECT * FROM Item";
             rs = st.executeQuery(query);
