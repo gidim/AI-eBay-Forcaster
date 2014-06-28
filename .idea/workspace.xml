@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="61b4af85-9cf7-4cbe-b5ed-dfb6bb2f8081" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/DatabaseUtils.props" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ebayForcaster/DBConnect.java" afterPath="$PROJECT_DIR$/src/ebayForcaster/DBConnect.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ebayForcaster/EbayItem.java" afterPath="$PROJECT_DIR$/src/ebayForcaster/EbayItem.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ebayForcaster/JsonItemParser.java" afterPath="$PROJECT_DIR$/src/ebayForcaster/JsonItemParser.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ebayForcaster/Weka.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ebayForcaster/Program.java" afterPath="$PROJECT_DIR$/src/ebayForcaster/Program.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -33,8 +30,28 @@
       <file leaf-file-name="Program.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ebayForcaster/Program.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.47277936" vertical-offset="0" max-vertical-offset="698">
-              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.5155483" vertical-offset="0" max-vertical-offset="1530">
+              <caret line="31" column="23" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Driver.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ebayForcaster/Driver.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1110">
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DBConnect.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ebayForcaster/DBConnect.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-9.115385" vertical-offset="2673" max-vertical-offset="3495">
+              <caret line="194" column="21" selection-start-line="194" selection-start-column="21" selection-end-line="194" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -42,15 +59,23 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="Instances.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="jar://$PROJECT_DIR$/lib/weka-src.jar!/src/main/java/weka/core/Instances.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="421" max-vertical-offset="30825">
+              <caret line="71" column="13" selection-start-line="71" selection-start-column="13" selection-end-line="71" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="JsonItemParser.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ebayForcaster/JsonItemParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.25" vertical-offset="570" max-vertical-offset="1290">
-              <caret line="71" column="0" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+            <state vertical-scroll-proportion="-6.923077" vertical-offset="0" max-vertical-offset="345">
+              <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#4099#4100#0" expanded="true" />
-                <element signature="e#4132#4133#0" expanded="true" />
+                <element signature="method#JsonItemParser#0;class#JsonItemParser#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -59,121 +84,27 @@
       <file leaf-file-name="EbayItem.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ebayForcaster/EbayItem.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.076923" vertical-offset="195" max-vertical-offset="6855">
-              <caret line="27" column="29" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
+            <state vertical-scroll-proportion="-27.115385" vertical-offset="0" max-vertical-offset="5280">
+              <caret line="53" column="72" selection-start-line="53" selection-start-column="72" selection-end-line="53" selection-end-column="72" />
               <folding>
-                <element signature="e#841#842#0" expanded="true" />
-                <element signature="e#864#865#0" expanded="true" />
-                <element signature="e#2211#2212#0" expanded="true" />
-                <element signature="e#2235#2236#0" expanded="true" />
-                <element signature="e#2288#2289#0" expanded="true" />
-                <element signature="e#2323#2324#0" expanded="true" />
-                <element signature="e#2355#2356#0" expanded="true" />
-                <element signature="e#2373#2374#0" expanded="true" />
-                <element signature="e#2414#2415#0" expanded="true" />
-                <element signature="e#2437#2438#0" expanded="true" />
-                <element signature="e#2470#2471#0" expanded="true" />
-                <element signature="e#2489#2490#0" expanded="true" />
-                <element signature="e#2532#2533#0" expanded="true" />
-                <element signature="e#2557#2558#0" expanded="true" />
-                <element signature="e#2594#2595#0" expanded="true" />
-                <element signature="e#2617#2618#0" expanded="true" />
-                <element signature="e#2668#2669#0" expanded="true" />
-                <element signature="e#2701#2702#0" expanded="true" />
-                <element signature="e#2733#2734#0" expanded="true" />
-                <element signature="e#2754#2755#0" expanded="true" />
-                <element signature="e#2798#2799#0" expanded="true" />
-                <element signature="e#2827#2828#0" expanded="true" />
-                <element signature="e#2862#2863#0" expanded="true" />
-                <element signature="e#2883#2884#0" expanded="true" />
-                <element signature="e#2930#2931#0" expanded="true" />
-                <element signature="e#2959#2960#0" expanded="true" />
-                <element signature="e#2997#2998#0" expanded="true" />
-                <element signature="e#3024#3025#0" expanded="true" />
-                <element signature="e#3080#3081#0" expanded="true" />
-                <element signature="e#3121#3122#0" expanded="true" />
-                <element signature="e#3172#3173#0" expanded="true" />
-                <element signature="e#3209#3210#0" expanded="true" />
-                <element signature="e#3395#3396#0" expanded="true" />
-                <element signature="e#3427#3428#0" expanded="true" />
-                <element signature="e#3496#3497#0" expanded="true" />
-                <element signature="e#3547#3548#0" expanded="true" />
-                <element signature="e#3589#3590#0" expanded="true" />
-                <element signature="e#3617#3618#0" expanded="true" />
-                <element signature="e#3679#3680#0" expanded="true" />
-                <element signature="e#3722#3723#0" expanded="true" />
-                <element signature="e#3762#3763#0" expanded="true" />
-                <element signature="e#3788#3789#0" expanded="true" />
-                <element signature="e#3845#3846#0" expanded="true" />
-                <element signature="e#3884#3885#0" expanded="true" />
-                <element signature="e#3930#3931#0" expanded="true" />
-                <element signature="e#3962#3963#0" expanded="true" />
-                <element signature="e#4032#4033#0" expanded="true" />
-                <element signature="e#4083#4084#0" expanded="true" />
-                <element signature="e#4134#4135#0" expanded="true" />
-                <element signature="e#4171#4172#0" expanded="true" />
-                <element signature="e#4349#4350#0" expanded="true" />
-                <element signature="e#4375#4376#0" expanded="true" />
-                <element signature="e#4429#4430#0" expanded="true" />
-                <element signature="e#4468#4469#0" expanded="true" />
-                <element signature="e#4501#4502#0" expanded="true" />
-                <element signature="e#4520#4521#0" expanded="true" />
-                <element signature="e#4563#4564#0" expanded="true" />
-                <element signature="e#4588#4589#0" expanded="true" />
-                <element signature="e#4617#4618#0" expanded="true" />
-                <element signature="e#4635#4636#0" expanded="true" />
-                <element signature="e#4673#4674#0" expanded="true" />
-                <element signature="e#4696#4697#0" expanded="true" />
-                <element signature="e#4733#4734#0" expanded="true" />
-                <element signature="e#4756#4757#0" expanded="true" />
-                <element signature="e#4808#4809#0" expanded="true" />
-                <element signature="e#4841#4842#0" expanded="true" />
-                <element signature="e#4877#4878#0" expanded="true" />
-                <element signature="e#4899#4900#0" expanded="true" />
-                <element signature="e#4949#4950#0" expanded="true" />
-                <element signature="e#4980#4981#0" expanded="true" />
-                <element signature="e#5013#5014#0" expanded="true" />
-                <element signature="e#5034#5035#0" expanded="true" />
-                <element signature="e#5079#5080#0" expanded="true" />
-                <element signature="e#5108#5109#0" expanded="true" />
-                <element signature="e#5147#5148#0" expanded="true" />
-                <element signature="e#5172#5173#0" expanded="true" />
-                <element signature="e#5227#5228#0" expanded="true" />
-                <element signature="e#5264#5265#0" expanded="true" />
-                <element signature="e#5307#5308#0" expanded="true" />
-                <element signature="e#5336#5337#0" expanded="true" />
-                <element signature="e#5400#5401#0" expanded="true" />
-                <element signature="e#5445#5446#0" expanded="true" />
-                <element signature="e#5481#5482#0" expanded="true" />
-                <element signature="e#5506#5507#0" expanded="true" />
-                <element signature="e#5558#5559#0" expanded="true" />
-                <element signature="e#5595#5596#0" expanded="true" />
-                <element signature="e#5638#5639#0" expanded="true" />
-                <element signature="e#5667#5668#0" expanded="true" />
-                <element signature="e#5731#5732#0" expanded="true" />
-                <element signature="e#5776#5777#0" expanded="true" />
+                <element signature="method#EbayItem#1;class#EbayItem#0" expanded="false" />
+                <element signature="e#3026#3027#0" expanded="true" />
+                <element signature="e#3055#3056#0" expanded="true" />
+                <element signature="method#setOneDayShippingAvailable#0;class#EbayItem#0" expanded="false" />
+                <element signature="method#toString#0;class#EbayItem#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DBConnect.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ebayForcaster/DBConnect.java">
+      <file leaf-file-name="Weka.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ebayForcaster/Weka.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1844" max-vertical-offset="2655">
-              <caret line="138" column="119" selection-start-line="138" selection-start-column="13" selection-end-line="138" selection-end-column="119" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="WebDataGrabber.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ebayForcaster/WebDataGrabber.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.769231" vertical-offset="410" max-vertical-offset="1095">
-              <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
+              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#125#126#0" expanded="true" />
+                <element signature="e#152#153#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -193,9 +124,10 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/src/ebayForcaster/WebDataGrabber.java" />
-        <option value="$PROJECT_DIR$/src/ebayForcaster/DBConnect.java" />
         <option value="$PROJECT_DIR$/src/ebayForcaster/EbayItem.java" />
+        <option value="$PROJECT_DIR$/src/ebayForcaster/DBConnect.java" />
         <option value="$PROJECT_DIR$/src/ebayForcaster/JsonItemParser.java" />
+        <option value="$PROJECT_DIR$/src/ebayForcaster/Weka.java" />
         <option value="$PROJECT_DIR$/src/ebayForcaster/Program.java" />
       </list>
     </option>
@@ -203,7 +135,7 @@
   <component name="ProjectFrameBounds">
     <option name="y" value="22" />
     <option name="width" value="1440" />
-    <option name="height" value="831" />
+    <option name="height" value="829" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -231,13 +163,17 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="ebayForcaster" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -270,7 +206,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -280,7 +216,7 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.copyJavadoc" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/slf4j-api-1.7.5.jar!/" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/mysql-connector-java-5.1.31-bin.jar!/" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -288,6 +224,7 @@
     <property name="dynamic.classpath" value="false" />
     <property name="OverrideImplement.combined" value="true" />
     <property name="OverrideImplement.overriding.sorted" value="false" />
+    <property name="LayoutCode.rearrangeEntriesJava" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -352,19 +289,6 @@
       <option name="PORT" value="5005" />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -390,6 +314,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -469,35 +406,44 @@
       <created>1403468228189</created>
       <updated>1403468228189</updated>
     </task>
+    <task id="LOCAL-00001" summary="db">
+      <created>1403917815044</created>
+      <updated>1403917815044</updated>
+    </task>
+    <task id="LOCAL-00002" summary="zipCodes to String">
+      <created>1403918797216</created>
+      <updated>1403918797216</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1440" height="831" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="22" width="1440" height="829" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32882273" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29364005" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5696888" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32882273" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283582" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1881259" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32882273" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.11533243" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -516,13 +462,13 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32882273" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1881259" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32882273" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -540,18 +486,13 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
+    <MESSAGE value="db" />
+    <MESSAGE value="zipCodes to String" />
+    <option name="LAST_COMMIT_MESSAGE" value="zipCodes to String" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/ebayForcaster/JsonItemParser.java</url>
-          <line>67</line>
-          <properties />
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-      <option name="time" value="4" />
+      <option name="time" value="9" />
     </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
@@ -561,11 +502,51 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/ebayForcaster/Program.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="240">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="960">
+          <caret line="39" column="35" selection-start-line="39" selection-start-column="35" selection-end-line="39" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ebayForcaster/JsonItemParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="834" max-vertical-offset="1605">
+          <caret line="69" column="48" selection-start-line="69" selection-start-column="48" selection-end-line="69" selection-end-column="48" />
+          <folding>
+            <element signature="method#JsonItemParser#0;class#JsonItemParser#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ebayForcaster/EbayItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="7320">
+          <caret line="52" column="50" selection-start-line="52" selection-start-column="43" selection-end-line="52" selection-end-column="50" />
+          <folding>
+            <element signature="method#EbayItem#1;class#EbayItem#0" expanded="false" />
+            <element signature="e#3026#3027#0" expanded="true" />
+            <element signature="e#3055#3056#0" expanded="true" />
+            <element signature="method#setOneDayShippingAvailable#0;class#EbayItem#0" expanded="false" />
+            <element signature="method#toString#0;class#EbayItem#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ebayForcaster/DBConnect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1263" max-vertical-offset="3420">
+          <caret line="90" column="11" selection-start-line="90" selection-start-column="11" selection-end-line="90" selection-end-column="11" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ebayForcaster/Program.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="240">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -573,7 +554,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.8488372" vertical-offset="805" max-vertical-offset="1260">
           <caret line="79" column="0" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -581,146 +561,97 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5477528" vertical-offset="0" max-vertical-offset="356">
           <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DatabaseUtils.props">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1755">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ebayForcaster/WebDataGrabber.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.5271493" vertical-offset="0" max-vertical-offset="1095">
+          <caret line="45" column="0" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ebayForcaster/JsonItemParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.923077" vertical-offset="0" max-vertical-offset="345">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding>
+            <element signature="method#JsonItemParser#0;class#JsonItemParser#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/weka-src.jar!/src/main/java/weka/experiment/InstanceQuery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.46875" vertical-offset="435" max-vertical-offset="8760">
+          <caret line="79" column="13" selection-start-line="79" selection-start-column="13" selection-end-line="79" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ebayForcaster/EbayItem.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.076923" vertical-offset="195" max-vertical-offset="6855">
-          <caret line="27" column="29" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
+        <state vertical-scroll-proportion="-27.115385" vertical-offset="0" max-vertical-offset="5280">
+          <caret line="53" column="72" selection-start-line="53" selection-start-column="72" selection-end-line="53" selection-end-column="72" />
           <folding>
-            <element signature="e#841#842#0" expanded="true" />
-            <element signature="e#864#865#0" expanded="true" />
-            <element signature="e#2211#2212#0" expanded="true" />
-            <element signature="e#2235#2236#0" expanded="true" />
-            <element signature="e#2288#2289#0" expanded="true" />
-            <element signature="e#2323#2324#0" expanded="true" />
-            <element signature="e#2355#2356#0" expanded="true" />
-            <element signature="e#2373#2374#0" expanded="true" />
-            <element signature="e#2414#2415#0" expanded="true" />
-            <element signature="e#2437#2438#0" expanded="true" />
-            <element signature="e#2470#2471#0" expanded="true" />
-            <element signature="e#2489#2490#0" expanded="true" />
-            <element signature="e#2532#2533#0" expanded="true" />
-            <element signature="e#2557#2558#0" expanded="true" />
-            <element signature="e#2594#2595#0" expanded="true" />
-            <element signature="e#2617#2618#0" expanded="true" />
-            <element signature="e#2668#2669#0" expanded="true" />
-            <element signature="e#2701#2702#0" expanded="true" />
-            <element signature="e#2733#2734#0" expanded="true" />
-            <element signature="e#2754#2755#0" expanded="true" />
-            <element signature="e#2798#2799#0" expanded="true" />
-            <element signature="e#2827#2828#0" expanded="true" />
-            <element signature="e#2862#2863#0" expanded="true" />
-            <element signature="e#2883#2884#0" expanded="true" />
-            <element signature="e#2930#2931#0" expanded="true" />
-            <element signature="e#2959#2960#0" expanded="true" />
-            <element signature="e#2997#2998#0" expanded="true" />
-            <element signature="e#3024#3025#0" expanded="true" />
-            <element signature="e#3080#3081#0" expanded="true" />
-            <element signature="e#3121#3122#0" expanded="true" />
-            <element signature="e#3172#3173#0" expanded="true" />
-            <element signature="e#3209#3210#0" expanded="true" />
-            <element signature="e#3395#3396#0" expanded="true" />
-            <element signature="e#3427#3428#0" expanded="true" />
-            <element signature="e#3496#3497#0" expanded="true" />
-            <element signature="e#3547#3548#0" expanded="true" />
-            <element signature="e#3589#3590#0" expanded="true" />
-            <element signature="e#3617#3618#0" expanded="true" />
-            <element signature="e#3679#3680#0" expanded="true" />
-            <element signature="e#3722#3723#0" expanded="true" />
-            <element signature="e#3762#3763#0" expanded="true" />
-            <element signature="e#3788#3789#0" expanded="true" />
-            <element signature="e#3845#3846#0" expanded="true" />
-            <element signature="e#3884#3885#0" expanded="true" />
-            <element signature="e#3930#3931#0" expanded="true" />
-            <element signature="e#3962#3963#0" expanded="true" />
-            <element signature="e#4032#4033#0" expanded="true" />
-            <element signature="e#4083#4084#0" expanded="true" />
-            <element signature="e#4134#4135#0" expanded="true" />
-            <element signature="e#4171#4172#0" expanded="true" />
-            <element signature="e#4349#4350#0" expanded="true" />
-            <element signature="e#4375#4376#0" expanded="true" />
-            <element signature="e#4429#4430#0" expanded="true" />
-            <element signature="e#4468#4469#0" expanded="true" />
-            <element signature="e#4501#4502#0" expanded="true" />
-            <element signature="e#4520#4521#0" expanded="true" />
-            <element signature="e#4563#4564#0" expanded="true" />
-            <element signature="e#4588#4589#0" expanded="true" />
-            <element signature="e#4617#4618#0" expanded="true" />
-            <element signature="e#4635#4636#0" expanded="true" />
-            <element signature="e#4673#4674#0" expanded="true" />
-            <element signature="e#4696#4697#0" expanded="true" />
-            <element signature="e#4733#4734#0" expanded="true" />
-            <element signature="e#4756#4757#0" expanded="true" />
-            <element signature="e#4808#4809#0" expanded="true" />
-            <element signature="e#4841#4842#0" expanded="true" />
-            <element signature="e#4877#4878#0" expanded="true" />
-            <element signature="e#4899#4900#0" expanded="true" />
-            <element signature="e#4949#4950#0" expanded="true" />
-            <element signature="e#4980#4981#0" expanded="true" />
-            <element signature="e#5013#5014#0" expanded="true" />
-            <element signature="e#5034#5035#0" expanded="true" />
-            <element signature="e#5079#5080#0" expanded="true" />
-            <element signature="e#5108#5109#0" expanded="true" />
-            <element signature="e#5147#5148#0" expanded="true" />
-            <element signature="e#5172#5173#0" expanded="true" />
-            <element signature="e#5227#5228#0" expanded="true" />
-            <element signature="e#5264#5265#0" expanded="true" />
-            <element signature="e#5307#5308#0" expanded="true" />
-            <element signature="e#5336#5337#0" expanded="true" />
-            <element signature="e#5400#5401#0" expanded="true" />
-            <element signature="e#5445#5446#0" expanded="true" />
-            <element signature="e#5481#5482#0" expanded="true" />
-            <element signature="e#5506#5507#0" expanded="true" />
-            <element signature="e#5558#5559#0" expanded="true" />
-            <element signature="e#5595#5596#0" expanded="true" />
-            <element signature="e#5638#5639#0" expanded="true" />
-            <element signature="e#5667#5668#0" expanded="true" />
-            <element signature="e#5731#5732#0" expanded="true" />
-            <element signature="e#5776#5777#0" expanded="true" />
+            <element signature="method#EbayItem#1;class#EbayItem#0" expanded="false" />
+            <element signature="e#3026#3027#0" expanded="true" />
+            <element signature="e#3055#3056#0" expanded="true" />
+            <element signature="method#setOneDayShippingAvailable#0;class#EbayItem#0" expanded="false" />
+            <element signature="method#toString#0;class#EbayItem#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ebayForcaster/Weka.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding>
+            <element signature="e#125#126#0" expanded="true" />
+            <element signature="e#152#153#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/weka-src.jar!/src/main/java/weka/core/Instances.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="421" max-vertical-offset="30825">
+          <caret line="71" column="13" selection-start-line="71" selection-start-column="13" selection-end-line="71" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ebayForcaster/DBConnect.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1844" max-vertical-offset="2655">
-          <caret line="138" column="119" selection-start-line="138" selection-start-column="13" selection-end-line="138" selection-end-column="119" />
+        <state vertical-scroll-proportion="-9.115385" vertical-offset="2673" max-vertical-offset="3495">
+          <caret line="194" column="21" selection-start-line="194" selection-start-column="21" selection-end-line="194" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ebayForcaster/Driver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1110">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ebayForcaster/WebDataGrabber.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.769231" vertical-offset="410" max-vertical-offset="1095">
-          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ebayForcaster/JsonItemParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.25" vertical-offset="570" max-vertical-offset="1290">
-          <caret line="71" column="0" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#4099#4100#0" expanded="true" />
-            <element signature="e#4132#4133#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ebayForcaster/Program.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.47277936" vertical-offset="0" max-vertical-offset="698">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.5155483" vertical-offset="0" max-vertical-offset="1530">
+          <caret line="31" column="23" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -801,7 +732,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>json-smart-1.2</last-edited>
+          <last-edited>mysql-connector-java-5.1.31-bin</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

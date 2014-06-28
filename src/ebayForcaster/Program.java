@@ -14,10 +14,73 @@ import java.util.List;
 
 public class Program {
 
-    public static void main(String[] args) throws SQLException {
-        // TODO Auto-generated method stub
+    public static void main(String[] args) {
 
-    	DBConnect db = new DBConnect();
+        /**
+         * We will set this manually to true
+         * when we want to update teh data
+         */
+        boolean setupFlag = false;
+        if(setupFlag){
+            updateAllProducts();
+        }
+
+
+
+        //get the data about the product the user want
+        if (args.length != 1)
+                return;
+
+        Weka weka = new Weka();
+
+        //get the Weka report
+        String toCLient = weka.queryByID(args[0]);
+
+
+
+
+    }
+
+
+    /**
+     * gets data from DB and pushes it to weka
+     * TODO: fix weka part
+     * @param id
+     */
+    private static void setDataToWekaById(String id){
+
+        try {
+            DBConnect db = new DBConnect();
+            Instances data = db.getWekaInstance(96312835, true, true, true, true, true);
+            ArffSaver saver = new ArffSaver();
+            saver.setInstances(data);
+            saver.setFile(new File("output.arff"));
+            saver.writeBatch();
+        } catch (Exception e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+    }
+
+
+    /**
+     * run over all products and update DB and WEKA
+     */
+    private static void updateAllProducts() {
+        String[] productsId = {"id1", "id2", "id3"};
+
+        for (int i = 0; i < productsId.length; i++) {
+            updateDataOnDBForItem(productsId[i]);
+            setDataToWekaById(productsId[i]);
+        }
+    }
+
+    /**
+     * gets an eBay item ID, fetches from API and saves to DB
+     */
+    private static void updateDataOnDBForItem(String id) {
+
+        DBConnect db = new DBConnect();
         WebDataGrabber wg = new WebDataGrabber();
         try {
 
@@ -29,31 +92,16 @@ public class Program {
             db.getData();
             //System.out.println(items);
             db.insertEbayItems(items);
-            
-            
-
-            try {
-				Instances data = db.getWekaInstance(96312835, true, true, true, true, true);
-				ArffSaver saver = new ArffSaver();
-	            saver.setInstances(data);
-	            saver.setFile(new File("output.arff"));
-	            saver.writeBatch();
-			} catch (Exception e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-
-            
-
-            //System.out.println(str);
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        } catch (HttpException e) {
-            e.printStackTrace();
-        } catch (ParseException e) {
-            e.printStackTrace();
+        } catch (HttpException e1) {
+            e1.printStackTrace();
+        } catch (SQLException e1) {
+            e1.printStackTrace();
+        } catch (ParseException e1) {
+            e1.printStackTrace();
+        } catch (IOException e1) {
+            e1.printStackTrace();
         }
+
 
     }
 }
