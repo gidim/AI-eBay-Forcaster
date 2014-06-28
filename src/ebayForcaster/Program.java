@@ -29,8 +29,8 @@ public class Program {
             db.getData();
             //System.out.println(items);
             db.insertEbayItems(items);
-            
-            
+
+
 
             try {
 				Instances data = db.getWekaInstance(96312835, true, true, true, true, true);
@@ -43,7 +43,7 @@ public class Program {
 				e.printStackTrace();
 			}
 
-            
+
 
             //System.out.println(str);
 
