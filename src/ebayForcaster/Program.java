@@ -26,11 +26,11 @@ public class Program {
             return;
         }
 
-
+        setDataToWekaById("168508202");
 
         //get the data about the product the user want
         if (args.length != 1)
-                return;
+            return;
 
         Weka weka = new Weka();
 
@@ -50,10 +50,11 @@ public class Program {
 
         try {
             DBConnect db = new DBConnect();
-            Instances data = db.getWekaInstance(96312835, true, true, true, true, true);
+            Instances data = db.getWekaInstance(Integer.parseInt(id), true, true, true, true, true);
             ArffSaver saver = new ArffSaver();
             saver.setInstances(data);
-            saver.setFile(new File("output.arff"));
+            System.out.println("Before");
+            saver.setFile(new File(id + ".arff"));
             saver.writeBatch();
         } catch (Exception e) {
             // TODO Auto-generated catch block
@@ -66,9 +67,8 @@ public class Program {
      * run over all products and update DB and WEKA
      */
     private static void updateAllProducts() {
-        String[] productsId = {"168508202","102587397","167317351","175256176"};
 
-
+        String[] productsId = {"168508202", "175256176", "167317351", "102587397"};
 
 
         for (int i = 0; i < productsId.length; i++) {
