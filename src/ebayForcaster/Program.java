@@ -20,9 +20,10 @@ public class Program {
          * We will set this manually to true
          * when we want to update teh data
          */
-        boolean setupFlag = false;
+        boolean setupFlag = true;
         if(setupFlag){
             updateAllProducts();
+            return;
         }
 
 
@@ -35,8 +36,6 @@ public class Program {
 
         //get the Weka report
         String toCLient = weka.queryByID(args[0]);
-
-
 
 
     }
@@ -67,7 +66,10 @@ public class Program {
      * run over all products and update DB and WEKA
      */
     private static void updateAllProducts() {
-        String[] productsId = {"id1", "id2", "id3"};
+        String[] productsId = {"168508202","102587397","167317351","175256176"};
+
+
+
 
         for (int i = 0; i < productsId.length; i++) {
             updateDataOnDBForItem(productsId[i]);
@@ -84,7 +86,7 @@ public class Program {
         WebDataGrabber wg = new WebDataGrabber();
         try {
 
-            String str = wg.getURL("http://svcs.ebay.com/services/search/FindingService/v1?OPERATION-NAME=findCompletedItems&SERVICE-VERSION=1.7.0&SECURITY-APPNAME=QualityH-65b4-4a00-905f-ead3711cbeae&RESPONSE-DATA-FORMAT=JSON&REST-PAYLOAD&keywords=Garmin+nuvi+1300+Automotive+GPS+Receiver&itemFilter(0).name=SoldItemsOnly&itemFilter(0).value=true&outputSelector(0)=SellerInfo&sortOrder=EndTimeSoonest&paginationInput.entriesPerPage=500");
+            String str = wg.getURL("http://svcs.ebay.com/services/search/FindingService/v1?OPERATION-NAME=findCompletedItems&SERVICE-VERSION=1.7.0&SECURITY-APPNAME=QualityH-65b4-4a00-905f-ead3711cbeae&RESPONSE-DATA-FORMAT=JSON&REST-PAYLOAD&keywords=&productId.@type=ReferenceID&productId="+id+"&itemFilter(0).name=SoldItemsOnly&itemFilter(0).value=true&itemFilter(1).name=Condition&itemFilter(1).value=1000&outputSelector(0)=SellerInfo&sortOrder=EndTimeSoonest&paginationInput.entriesPerPage=100");
             JsonItemParser jp = new JsonItemParser(str);
 
 
