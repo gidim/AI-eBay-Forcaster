@@ -167,7 +167,7 @@ public class DBConnect {
                 + "positiveFeedbackPercent, feedbackRatingStar, topRatedSeller, "
                 + "shippingServiceCost, shippingType, expeditedShipping, "
                 + "oneDayShippingAvailable, handlingTime, convertedCurrentPrice,"
-                + "bidCount, bestOfferEnabled, buyItNowAvailable, endTime,"
+                + "bidCount, bestOfferEnabled, buyItNowAvailable, DATE_FORMAT(endTime, '%Y-%m-%d') AS endTime,"
                 + "listingType, returnsAccepted, conditionId, topRatedListing"
                 + " FROM Item "
                 + "WHERE productId = \"" +  Integer.toString(productId) + "\"";
