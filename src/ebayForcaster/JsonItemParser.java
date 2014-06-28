@@ -43,7 +43,7 @@ public class JsonItemParser {
             else
                 continue;
 
-            int zipCode = Integer.parseInt((String) JsonPath.read(jsonItem, "postalCode.[0]"));
+            String zipCode = (String) JsonPath.read(jsonItem, "postalCode.[0]");
             String country = JsonPath.read(jsonItem, "country.[0]");
             int feedbackCount = Integer.parseInt((String)JsonPath.read(jsonItem, "sellerInfo.[0].feedbackScore.[0]"));
             double feedbackPercentPositive = Double.parseDouble((String)JsonPath.read(jsonItem, "sellerInfo.[0].positiveFeedbackPercent.[0]"));
@@ -55,7 +55,6 @@ public class JsonItemParser {
             double shippingPrice;
             if(jsonItem.toString().contains("shippingServiceCost"))
                  shippingPrice = Double.parseDouble((String)JsonPath.read(jsonItem, "shippingInfo.[0].shippingServiceCost.[0].__value__"));
-
             else
                 shippingPrice = 0;
 

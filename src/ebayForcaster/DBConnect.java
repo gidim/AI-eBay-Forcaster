@@ -78,7 +78,7 @@ public class DBConnect {
                 preparedStatement.setString(2, item.getName());
                 preparedStatement.setString(3, item.getCatID());
                 preparedStatement.setString(4, item.getProductID());
-                preparedStatement.setInt(5, item.getZipcode());
+                preparedStatement.setString(5, item.getZipcode());
                 preparedStatement.setString(6, item.getCountry());
                 preparedStatement.setInt(7, item.getFeedbackCount());
                 preparedStatement.setDouble(8, item.getFeedbackPercentPositive());
@@ -124,7 +124,7 @@ public class DBConnect {
             String name = rs.getString("title");
             String catID = rs.getString("categoryId");
             String productID = rs.getString("productId");
-            int zipcode = rs.getInt("postalCode");
+            String zipcode = rs.getString("postalCode");
             String country = rs.getString("country");
             int feedbackCount = rs.getInt("feedbackScore");
             double feedbackPercentPositive = rs.getDouble("positiveFeedbackPercent");
@@ -172,7 +172,7 @@ public class DBConnect {
                 + " FROM Item "
                 + "WHERE productId = \"" +  Integer.toString(productId) + "\"";
 
-        System.out.println(queryString);
+
 
 
 					/*
@@ -194,6 +194,7 @@ public class DBConnect {
 						query += " AND listingType = " + auction;
 					}
 					query += ";";
+                       */
 
         InstanceQuery query = new InstanceQuery();
         query.setUsername("ebay");
