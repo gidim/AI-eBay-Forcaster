@@ -12,7 +12,7 @@ public class EbayItem {
     private String name;
     private String catID;
     private String productID;
-    private int zipcode;
+    private String zipcode;
     private String country;
     private int feedbackCount;
     double  feedbackPercentPositive;
@@ -48,7 +48,7 @@ public class EbayItem {
 	}
 
 	public EbayItem(String ebayItemID, String name, String catID, String productID,
-			int zipcode, String country, int feedbackCount,
+			String zipcode, String country, int feedbackCount,
 			double feedbackPercentPositive, String feedbackRatingStar,
 			boolean topRatedSeller, String shippingType, double shippingPrice,
 			boolean expediatedShipping, boolean oneDayShippingAvailable,
@@ -147,7 +147,7 @@ public class EbayItem {
 
 
 
-	public int getZipcode() {
+	public String getZipcode() {
 		return zipcode;
 	}
 
@@ -155,7 +155,7 @@ public class EbayItem {
 
 
 
-	public void setZipcode(int zipcode) {
+	public void setZipcode(String zipcode) {
 		this.zipcode = zipcode;
 	}
 
