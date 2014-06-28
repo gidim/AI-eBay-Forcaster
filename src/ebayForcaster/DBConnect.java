@@ -163,14 +163,18 @@ public class DBConnect {
                                      boolean auction) throws Exception {
 
         String queryString = "SELECT itemId, title,"
-                + "categoryId, productId, postalCode, country, feedbackScore"
-                + "positiveFeedbackPercent, feedbackRatingStar, topRatedSeller"
-                + "shippingServiceCost, shippingType, expediatedShipping"
+                + "categoryId, productId, postalCode, country, feedbackScore, "
+                + "positiveFeedbackPercent, feedbackRatingStar, topRatedSeller, "
+                + "shippingServiceCost, shippingType, expeditedShipping, "
                 + "oneDayShippingAvailable, handlingTime, convertedCurrentPrice,"
                 + "bidCount, bestOfferEnabled, buyItNowAvailable, endTime,"
                 + "listingType, returnsAccepted, conditionId, topRatedListing"
-                + "FROM Items"
-                + "WHERE productId = " + productId;
+                + " FROM Item "
+                + "WHERE productId = \"" +  Integer.toString(productId) + "\"";
+
+        System.out.println(queryString);
+
+
 					/*
 					+ "AND (";
 					if (newItem){

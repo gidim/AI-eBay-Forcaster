@@ -31,7 +31,7 @@ public class Program {
             db.insertEbayItems(items);
             
             
-            /*
+
             try {
 				Instances data = db.getWekaInstance(96312835, true, true, true, true, true);
 				ArffSaver saver = new ArffSaver();
@@ -42,7 +42,7 @@ public class Program {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-			*/
+
             
 
             //System.out.println(str);
