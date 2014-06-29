@@ -158,48 +158,24 @@ public class DBConnect {
         return items;
     }
 
-    public Instances getWekaInstance(int productId, boolean newItem,
-                                     boolean newOtherItem, boolean usedItem, boolean buyItNow,
-                                     boolean auction) throws Exception {
+    public Instances getWekaInstance(int productId, String[] attributes) throws Exception {
 
-        String queryString = "SELECT itemId, title,"
-                + "categoryId, productId, postalCode, country, feedbackScore, "
-                + "positiveFeedbackPercent, feedbackRatingStar, topRatedSeller, "
-                + "shippingServiceCost, shippingType, expeditedShipping, "
-                + "oneDayShippingAvailable, handlingTime, convertedCurrentPrice,"
-                + "bidCount, bestOfferEnabled, buyItNowAvailable, DATE_FORMAT(endTime, '%Y-%m-%d') AS endTime,"
-                + "listingType, returnsAccepted, conditionId, topRatedListing"
-                + " FROM Item "
-                + "WHERE productId = \"" +  Integer.toString(productId) + "\"";
-
-
-
-
-					/*
-					+ "AND (";
-					if (newItem){
-						query += "conditionId = " + newItem + " OR ";
-					}
-					if (newOtherItem){
-						query += "conditionId = " + newOtherItem  + " OR ";
-					}
-					if (usedItem){
-						query += "conditionId = " + usedItem  + " OR ";
-					}
-					query += "FALSE) AND (";
-					if (buyItNow){
-						query += " AND listingType = " + buyItNow;
-					}
-					if (auction){
-						query += " AND listingType = " + auction;
-					}
-					query += ";";
-                       */
+        StringBuilder sb = new StringBuilder();
+        sb.append("SELECT ");
+        for(int i = 0; i < attributes.length; i++){
+            sb.append(attributes[i]);
+            if(i+1 < attributes.length){
+                sb.append(", ");
+            }
+        }
+        sb.append(" FROM Item WHERE productId = \"");
+        sb.append(Integer.toString(productId));
+        sb.append("\"");
 
         InstanceQuery query = new InstanceQuery();
         query.setUsername("ebay");
         query.setPassword("ebay3344");
-        query.setQuery(queryString);
+        query.setQuery(sb.toString());
 
         return query.retrieveInstances();
     }
@@ -210,7 +186,6 @@ public class DBConnect {
 
             while (rs.next()) {
                 String name = rs.getString("itemId");
-                System.out.println("ID: " + name);
             }
 
     }

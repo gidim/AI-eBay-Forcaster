@@ -67,7 +67,13 @@ public class JsonItemParser {
 
             boolean oneDayShippingAvailable = Boolean.parseBoolean((String)JsonPath.read(jsonItem, "shippingInfo.[0].oneDayShippingAvailable.[0]"));
             String shippingType = ((String)JsonPath.read(jsonItem, "shippingInfo.[0].shippingType.[0]"));
-            int handlingTime = Integer.parseInt((String)JsonPath.read(jsonItem,"shippingInfo.[0].handlingTime.[0]"));
+
+            int handlingTime;
+            if(jsonItem.toString().contains("handlingTime")) {
+                handlingTime = Integer.parseInt((String) JsonPath.read(jsonItem, "shippingInfo.[0].handlingTime.[0]"));
+            } else
+                handlingTime = 1;
+
             double price = Double.parseDouble((String) JsonPath.read(jsonItem, "sellingStatus.[0].currentPrice.[0].__value__"));
 
             int bids;
