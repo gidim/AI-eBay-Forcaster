@@ -1,0 +1,8 @@
+	<?php
+		$con = mysqli_connect("107.170.18.96:3306", "ebay", "ebay3344", "ebayForcaster");
+		if (mysqli_connect_errno()) {
+			echo "Failed to connect to MySQL: " . mysqli_connect_error();
+		}
+		
+		$result = mysqli_query($con,"SELECT * FROM Item");
+	?>

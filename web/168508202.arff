@@ -1,0 +1,95 @@
+@relation QueryResult
+
+@attribute itemId {111373193937,111383295805,111388942601,111389035214,111391949874,121359521603,121361228620,121365584744,121365971516,121367708521,121367741349,121372320487,131214626111,131217129917,131218485107,131218500438,131220238903,141308046892,141322377520,141331928605,151325074745,151328175370,151329970760,151335260525,151335282944,151337629710,161350710405,161351049775,171331991278,171360196574,171368654629,171370551861,181444151588,181446682516,191225010311,191227829207,201105046887,201106233966,201108136519,201115776779,201116941229,221472954785,221473617387,221479128485,231270331109,251558392165,251558806935,251565597191,251566284025,261509622967,271524309312,271524978580,271525081425,271532338108,271533219486,281354596709,281371495178,291170872338,291171556135,301215399825,301217180750,301218977395,301223044303,321439395601,331232873733,331237993119,360964740415}
+@attribute title {'New Unlocked AT&T Apple iPhone 5S 16GB SmartPhone WiFi Space Grey GOOD IMEI GSM','BRAND NEW Apple iPhone 5S - 16GB - Space Gray (Factory Unlocked) ','AT&T and Factory Unlocked Apple iPhone 5s - 16GBGB - Space Gray SEALED IN BOX','AT&T and Factory Unlocked Apple iPhone 5s - 16GBGB - Space Gray SEALED IN BOX!','iPhone 5s 16gb ((factory unlocked))Space Grey Sealed Gsm/Lte World Phone Ready','BRAND NEW Apple iPhone 5S - 16GB - Space Gray (Factory Unlocked) Verizon','iPhone 5s 16gb ((factory unlocked))Space Grey (Still Sealed) Gsm/Lte World Phone','**BRAND NIB, FACTORY UNLOCKED** Apple iPhone 5s - 16GB, Space Gray Smartphone','*NEW, FACTORY UNLOCKED* Apple iPhone 5s - 16GB, Space Gray - WRNTY OCT 17, \'14','*NIB, FACTORY UNLOCKED* Apple iPhone 5s - 16GB, Space Gray - WRNTY MAY 26, 2015','BRAND NEW- Apple iPhone 5S - 16GB- Gray- FACTORY UNLOCKED - ATT TMOBILE VERIZON','? NEW SEALED FACTORY UNLOCKED APPLE IPHONE 5S 5 S 16GB BLACK SPACE GRAY 4G LTE ?','BRAND NEW SEALED Apple iPhone 5S - 16GB Gray FACTORY UNLOCKED - ATT TMOBILE GSM','Apple iPhone 5s (Latest Model) - 16GB - Space Gray (Factory Unlocked) Smartphone','apple iphone 5s LTE 16GB UNLOCKED space gray','Brand new iPhone 5s - 16GB - Space Gray (Factory Unlocked)','NEW SEALED FACTORY UNLOCKED APPLE IPHONE 5S 16GB BLACK GRAY ATT TMOBILE GLOBAL','AT&T Apple iPhone 5s - 16GBGB - Space Gray FACTORY SEALED IN BOX!','@ Brand New+Unlocked+Warranty+iPHONE 5s Gray 16GB+att / tmobile GSM+Bundle @','*BRAND NEW* Apple iPhone 5S 16gb Space Gray (FACTORY UNLOCKED) AT&T T MOBILE GSM','? Apple iPhone 5s - 16GB - Space Gray (Factory Unlocked) AT&T T-Mobile Verizon ?','BRAND NEW - APPLE iPHONE 5s - 16GB - SPACE GRAY - FACTORY UNLOCKED - ANY GSM','Apple iPhone 5s - 16GB - Space Gray - Factory Unlocked - Verizon - AT&T T-Mobile','BRAND NEW SEALED Apple iPhone 5S 16GB Space Gray Grey Factory Unlocked Clean ESN','*BRAND NEW* Apple iPhone 5S 16gb Space Gray (FACTORY UNLOCKED) VERIZON ANY GSM','Apple iPhone 5s Gray (Latest Model) - 16GB (Factory Unlocked) ANY SIM + EXTRAS!!','Apple iPhone 5S - 16GB - Gray (Factory Unlocked) New In Box, with Apple Warranty','New Apple iPhone 5s (Latest Model) - 16GB - Space Gray (Factory Unlocked)','Apple iPhone 5S - Verizon 16GB Space Gray Unlocked Smartphone - BRAND NEW IN BOX','Apple iPhone 5s 16gb Space Gray (Verizon)factory unlocked new in box','Apple iPhone 5s (Latest Model) - 16 GB SPACE GRAY (Factory Unlocked) Smartphone','Apple iPhone 5s (Latest Model) - 16GB - Space Grey (Factory Unlocked) Smartphone','16 GB IPHONE 5S FACTORY UNLOCKED NEW IN BOX ***SPACE GRAY*** FREE SHIPPING','Apple iPhone 5s (Latest Model)16GB Space Gray (Factory Unlocked) BRAND NEW','**NEW** iPhone 5s 16GB Factory Unlocked GSM ( Space Grey )','Apple iPhone 5s (Latest Model) - 16GB - Space Gray (Unlocked) Smartphone','NEW Apple iPhone 5s - 16GB - Space Gray (Factory Unlocked) AT&T T-Mobile Verizon','Unlocked Apple iPhone 5s (Latest Model) - 16GB - Space Gray (T-Mobile) Smartphon','Apple iPhone 5s- 16GB - Space Gray (Factory Unlocked) Smartphone NEW!','16 GB IPHONE 5S (FACTORY UNLOCKED) NEW IN BOX *SEALED* (SPACE GRAY)  CLEAN IMEI'}
+@attribute categoryId {9355}
+@attribute productId {168508202}
+@attribute postalCode {0,98683,36571,87107,30319,49512,33324,33140,41056,75001,45459,92683,98006,83634,77539,92651,08043,78240,43551,N2L3W8,35805,06516,95667,67226,60152,53126,07054,60629,12969,28384,22901,96817,02118,47119,30311,97321,90212,83646,29212}
+@attribute country {US,SA,CA}
+@attribute feedbackScore numeric
+@attribute positiveFeedbackPercent numeric
+@attribute feedbackRatingStar {Green,Red,Turquoise,Blue,None,Yellow,Purple}
+@attribute topRatedSeller numeric
+@attribute shippingServiceCost numeric
+@attribute shippingType {FlatDomesticCalculatedInternational,Free,Flat,Calculated,CalculatedDomesticFlatInternational}
+@attribute expeditedShipping numeric
+@attribute oneDayShippingAvailable numeric
+@attribute handlingTime numeric
+@attribute bidCount numeric
+@attribute bestOfferEnabled numeric
+@attribute buyItNowAvailable numeric
+@attribute endTime {2014-06-22,2014-06-17,2014-06-28,2014-06-26,2014-06-27,2014-06-15,2014-06-14,2014-06-20,2014-06-24,2014-06-21,2014-06-23,2014-06-18,2014-06-19,2014-06-16,2014-06-29,2014-06-25}
+@attribute listingType {StoreInventory,Auction,FixedPrice}
+@attribute returnsAccepted numeric
+@attribute conditionId numeric
+@attribute topRatedListing numeric
+@attribute convertedCurrentPrice numeric
+
+@data
+111373193937,'New Unlocked AT&T Apple iPhone 5S 16GB SmartPhone WiFi Space Grey GOOD IMEI GSM',9355,168508202,0,US,6745,99.3,Green,1,0,FlatDomesticCalculatedInternational,0,0,1,0,1,0,2014-06-22,StoreInventory,0,1000,0,590
+111383295805,'BRAND NEW Apple iPhone 5S - 16GB - Space Gray (Factory Unlocked) ',9355,168508202,98683,US,1118,100,Red,1,0,FlatDomesticCalculatedInternational,0,0,1,0,0,0,2014-06-17,StoreInventory,1,1000,1,598.85
+111388942601,'AT&T and Factory Unlocked Apple iPhone 5s - 16GBGB - Space Gray SEALED IN BOX',9355,168508202,36571,US,1651,100,Red,1,0,FlatDomesticCalculatedInternational,1,0,1,0,0,0,2014-06-28,StoreInventory,1,1000,1,699.95
+111389035214,'AT&T and Factory Unlocked Apple iPhone 5s - 16GBGB - Space Gray SEALED IN BOX!',9355,168508202,36571,US,1651,100,Red,1,0,FlatDomesticCalculatedInternational,1,0,1,58,0,0,2014-06-26,Auction,1,1000,1,633
+111391949874,'AT&T and Factory Unlocked Apple iPhone 5s - 16GBGB - Space Gray SEALED IN BOX!',9355,168508202,36571,US,1651,100,Red,1,0,FlatDomesticCalculatedInternational,1,0,1,44,0,0,2014-06-27,Auction,1,1000,1,601.01
+121359521603,'iPhone 5s 16gb ((factory unlocked))Space Grey Sealed Gsm/Lte World Phone Ready',9355,168508202,87107,US,251,98.6,Turquoise,0,0,Free,1,0,0,38,0,0,2014-06-15,Auction,0,1000,0,595
+121361228620,'BRAND NEW Apple iPhone 5S - 16GB - Space Gray (Factory Unlocked) Verizon',9355,168508202,98683,US,1118,100,Red,1,0,Flat,0,0,1,0,0,0,2014-06-14,StoreInventory,1,1000,1,598.85
+121365584744,'BRAND NEW Apple iPhone 5S - 16GB - Space Gray (Factory Unlocked) Verizon',9355,168508202,98683,US,1118,100,Red,1,0,FlatDomesticCalculatedInternational,0,0,1,0,0,0,2014-06-20,StoreInventory,1,1000,1,598.85
+121365971516,'iPhone 5s 16gb ((factory unlocked))Space Grey (Still Sealed) Gsm/Lte World Phone',9355,168508202,87107,US,251,98.6,Turquoise,0,0,Free,1,0,0,26,0,0,2014-06-24,Auction,0,1000,0,630
+121367708521,'BRAND NEW Apple iPhone 5S - 16GB - Space Gray (Factory Unlocked) ',9355,168508202,98683,US,1118,100,Red,1,0,FlatDomesticCalculatedInternational,0,0,1,0,0,0,2014-06-21,StoreInventory,1,1000,1,598.85
+121367741349,'BRAND NEW Apple iPhone 5S - 16GB - Space Gray (Factory Unlocked) Verizon',9355,168508202,98683,US,1118,100,Red,1,0,FlatDomesticCalculatedInternational,0,0,1,0,0,0,2014-06-21,StoreInventory,1,1000,1,598.85
+121372320487,'iPhone 5s 16gb ((factory unlocked))Space Grey (Still Sealed) Gsm/Lte World Phone',9355,168508202,87107,US,251,98.6,Turquoise,0,0,Free,1,0,0,0,0,0,2014-06-26,FixedPrice,0,1000,0,620
+131214626111,'**BRAND NIB, FACTORY UNLOCKED** Apple iPhone 5s - 16GB, Space Gray Smartphone',9355,168508202,30319,US,97,98.9,Blue,0,0,Calculated,1,0,2,0,0,0,2014-06-17,FixedPrice,1,1000,0,612.99
+131217129917,'*NEW, FACTORY UNLOCKED* Apple iPhone 5s - 16GB, Space Gray - WRNTY OCT 17, \'14',9355,168508202,30319,US,97,98.9,Blue,0,0,Calculated,1,0,2,0,0,0,2014-06-21,FixedPrice,1,1000,0,554.39
+131218485107,'*NIB, FACTORY UNLOCKED* Apple iPhone 5s - 16GB, Space Gray - WRNTY MAY 26, 2015',9355,168508202,30319,US,97,98.9,Blue,0,0,Calculated,1,0,2,0,1,0,2014-06-23,StoreInventory,1,1000,0,619.99
+131218500438,'BRAND NEW- Apple iPhone 5S - 16GB- Gray- FACTORY UNLOCKED - ATT TMOBILE VERIZON',9355,168508202,49512,US,1020,100,Red,1,0,Free,1,1,1,0,0,0,2014-06-18,StoreInventory,1,1000,1,649
+131220238903,'BRAND NEW- Apple iPhone 5S - 16GB- Gray- FACTORY UNLOCKED - ATT TMOBILE VERIZON',9355,168508202,49512,US,1020,100,Red,1,0,Free,1,1,1,0,0,0,2014-06-19,StoreInventory,1,1000,1,649
+141308046892,'? NEW SEALED FACTORY UNLOCKED APPLE IPHONE 5S 5 S 16GB BLACK SPACE GRAY 4G LTE ?',9355,168508202,0,US,4072,100,Red,1,0,Free,1,1,1,0,0,0,2014-06-16,StoreInventory,1,1000,1,674.95
+141322377520,'BRAND NEW SEALED Apple iPhone 5S - 16GB Gray FACTORY UNLOCKED - ATT TMOBILE GSM',9355,168508202,49512,US,1020,100,Red,1,0,Free,1,1,1,0,0,0,2014-06-20,StoreInventory,1,1000,1,659
+141331928605,'Apple iPhone 5s (Latest Model) - 16GB - Space Gray (Factory Unlocked) Smartphone',9355,168508202,33324,US,0,0,None,0,0,Free,1,0,2,1,0,0,2014-06-27,Auction,0,1000,0,670
+151325074745,'apple iphone 5s LTE 16GB UNLOCKED space gray',9355,168508202,0,SA,1,100,None,0,0,Flat,0,0,3,29,0,0,2014-06-18,Auction,1,1000,0,650
+151328175370,'Brand new iPhone 5s - 16GB - Space Gray (Factory Unlocked)',9355,168508202,33140,US,38,100,Yellow,0,0,Flat,1,0,2,0,0,0,2014-06-15,FixedPrice,0,1000,0,660
+151329970760,'Apple iPhone 5s (Latest Model) - 16GB - Space Gray (Factory Unlocked) Smartphone',9355,168508202,41056,US,96,96.3,Blue,0,0,FlatDomesticCalculatedInternational,1,0,3,0,1,0,2014-06-28,StoreInventory,1,1000,0,625
+151335260525,'Apple iPhone 5s (Latest Model) - 16GB - Space Gray (Factory Unlocked) Smartphone',9355,168508202,75001,US,57,100,Blue,0,0,Calculated,1,0,3,0,0,0,2014-06-24,FixedPrice,0,1000,0,600
+151335282944,'NEW SEALED FACTORY UNLOCKED APPLE IPHONE 5S 16GB BLACK GRAY ATT TMOBILE GLOBAL',9355,168508202,45459,US,2442,100,Red,1,0,Free,1,1,1,0,0,0,2014-06-24,FixedPrice,1,1000,1,619
+151337629710,'NEW SEALED FACTORY UNLOCKED APPLE IPHONE 5S 16GB BLACK GRAY ATT TMOBILE GLOBAL',9355,168508202,45459,US,2442,100,Red,1,0,Free,1,1,1,0,0,0,2014-06-24,FixedPrice,1,1000,1,619
+161350710405,'AT&T Apple iPhone 5s - 16GBGB - Space Gray FACTORY SEALED IN BOX!',9355,168508202,92683,US,415,100,Turquoise,0,0,Free,1,0,2,0,1,0,2014-06-27,FixedPrice,0,1000,0,500
+161351049775,'Apple iPhone 5s (Latest Model) - 16GB - Space Gray (Factory Unlocked) Smartphone',9355,168508202,41056,US,98,96.4,Blue,0,0,FlatDomesticCalculatedInternational,1,0,3,0,1,0,2014-06-29,StoreInventory,1,1000,0,625
+171331991278,'@ Brand New+Unlocked+Warranty+iPHONE 5s Gray 16GB+att / tmobile GSM+Bundle @',9355,168508202,98006,US,1403,100,Red,0,0,Flat,1,0,1,0,0,0,2014-06-29,StoreInventory,0,1000,0,649
+171360196574,'*BRAND NEW* Apple iPhone 5S 16gb Space Gray (FACTORY UNLOCKED) AT&T T MOBILE GSM',9355,168508202,83634,US,2210,99.2,Red,0,0,FlatDomesticCalculatedInternational,1,1,1,0,0,0,2014-06-18,StoreInventory,1,1000,0,619.23
+171368654629,'Apple iPhone 5s (Latest Model) - 16GB - Space Gray (Factory Unlocked) Smartphone',9355,168508202,77539,US,24,100,Yellow,0,0,Free,1,0,2,1,0,0,2014-06-25,Auction,0,1000,0,585
+171370551861,'Apple iPhone 5s (Latest Model) - 16GB - Space Gray (Factory Unlocked) Smartphone',9355,168508202,77539,US,24,100,Yellow,0,0,Free,1,0,2,1,0,0,2014-06-28,Auction,0,1000,0,585
+181444151588,'? Apple iPhone 5s - 16GB - Space Gray (Factory Unlocked) AT&T T-Mobile Verizon ?',9355,168508202,92651,US,198,100,Turquoise,0,0,Free,1,0,1,0,0,0,2014-06-23,FixedPrice,0,1000,0,609.99
+181446682516,'BRAND NEW - APPLE iPHONE 5s - 16GB - SPACE GRAY - FACTORY UNLOCKED - ANY GSM',9355,168508202,08043,US,638,99.1,Purple,0,0,FlatDomesticCalculatedInternational,1,0,1,0,0,0,2014-06-24,StoreInventory,1,1000,0,620
+191225010311,'Apple iPhone 5s - 16GB - Space Gray - Factory Unlocked - Verizon - AT&T T-Mobile',9355,168508202,0,US,81,100,Blue,1,0,FlatDomesticCalculatedInternational,1,1,1,0,0,0,2014-06-27,StoreInventory,1,1000,1,639.99
+191227829207,'BRAND NEW SEALED Apple iPhone 5S 16GB Space Gray Grey Factory Unlocked Clean ESN',9355,168508202,78240,US,1296,100,Red,1,0,Free,0,1,0,0,0,0,2014-06-27,StoreInventory,1,1000,1,640
+201105046887,'*BRAND NEW* Apple iPhone 5S 16gb Space Gray (FACTORY UNLOCKED) VERIZON ANY GSM',9355,168508202,83634,US,2210,99.2,Red,0,0,FlatDomesticCalculatedInternational,1,1,1,0,0,0,2014-06-15,StoreInventory,1,1000,0,629.23
+201106233966,'Apple iPhone 5s Gray (Latest Model) - 16GB (Factory Unlocked) ANY SIM + EXTRAS!!',9355,168508202,43551,US,650,100,Purple,0,0,FlatDomesticCalculatedInternational,1,1,1,0,0,0,2014-06-14,StoreInventory,1,1000,0,619.95
+201108136519,'Apple iPhone 5s Gray (Latest Model) - 16GB (Factory Unlocked) ANY SIM + EXTRAS!!',9355,168508202,43551,US,650,100,Purple,0,0,FlatDomesticCalculatedInternational,1,1,1,0,0,0,2014-06-15,StoreInventory,1,1000,0,619.95
+201115776779,'Apple iPhone 5S - 16GB - Gray (Factory Unlocked) New In Box, with Apple Warranty',9355,168508202,N2L3W8,CA,1781,99,Red,0,0,CalculatedDomesticFlatInternational,0,0,1,0,0,0,2014-06-25,StoreInventory,1,1000,0,659.99
+201116941229,'Apple iPhone 5s (Latest Model) - 16GB - Space Gray (Factory Unlocked) Smartphone',9355,168508202,35805,US,94,98.7,Blue,0,0,Calculated,1,0,2,1,0,0,2014-06-26,Auction,0,1000,0,529.99
+221472954785,'New Apple iPhone 5s (Latest Model) - 16GB - Space Gray (Factory Unlocked)',9355,168508202,06516,US,235,100,Turquoise,0,0,Flat,1,0,2,0,1,0,2014-06-23,FixedPrice,0,1000,0,619
+221473617387,'New Apple iPhone 5s (Latest Model) - 16GB - Space Gray (Factory Unlocked)',9355,168508202,06516,US,235,100,Turquoise,0,0,Flat,1,0,2,0,1,0,2014-06-23,FixedPrice,0,1000,0,575
+221479128485,'Apple iPhone 5s (Latest Model) - 16GB - Space Gray (Factory Unlocked) Smartphone',9355,168508202,95667,US,5,100,None,0,0,CalculatedDomesticFlatInternational,0,0,2,1,0,0,2014-06-29,Auction,0,1000,0,700
+231270331109,'AT&T and Factory Unlocked Apple iPhone 5s - 16GBGB - Space Gray SEALED IN BOX!',9355,168508202,67226,US,41,96.2,Yellow,0,0,FlatDomesticCalculatedInternational,1,0,2,0,1,0,2014-06-28,FixedPrice,0,1000,0,529.01
+251558392165,'Apple iPhone 5S - Verizon 16GB Space Gray Unlocked Smartphone - BRAND NEW IN BOX',9355,168508202,60152,US,4,100,None,0,0,Flat,1,0,1,23,0,0,2014-06-16,Auction,0,1000,0,620
+251558806935,'Apple iPhone 5s 16gb Space Gray (Verizon)factory unlocked new in box',9355,168508202,53126,US,47,100,Yellow,0,0,Free,1,0,1,0,1,0,2014-06-14,FixedPrice,0,1000,0,500
+251565597191,'Apple iPhone 5s (Latest Model) - 16GB - Space Gray (Factory Unlocked) Smartphone',9355,168508202,07054,US,295,100,Turquoise,0,0,Flat,1,0,3,0,0,0,2014-06-21,StoreInventory,0,1000,0,599
+251566284025,'Apple iPhone 5s (Latest Model) - 16GB - Space Gray (Factory Unlocked) Smartphone',9355,168508202,60629,US,0,0,None,0,0,Free,1,0,1,25,0,0,2014-06-24,Auction,0,1000,0,620
+261509622967,'Apple iPhone 5s (Latest Model) - 16 GB SPACE GRAY (Factory Unlocked) Smartphone',9355,168508202,12969,US,18,100,Yellow,0,0,Calculated,1,0,2,1,0,0,2014-06-18,Auction,0,1000,0,400
+271524309312,'Apple iPhone 5s (Latest Model) - 16GB - Space Grey (Factory Unlocked) Smartphone',9355,168508202,0,US,56,100,Blue,0,0,Free,0,0,3,0,1,0,2014-06-16,FixedPrice,1,1000,0,499.99
+271524978580,'16 GB IPHONE 5S FACTORY UNLOCKED NEW IN BOX ***SPACE GRAY*** FREE SHIPPING',9355,168508202,28384,US,9880,99.9,Green,1,0,Free,1,1,1,0,0,0,2014-06-18,StoreInventory,1,1000,1,619.99
+271525081425,'Apple iPhone 5s (Latest Model) - 16GB - Space Grey (Factory Unlocked) Smartphone',9355,168508202,0,US,56,100,Blue,0,0,Free,0,0,3,0,0,0,2014-06-17,FixedPrice,1,1000,0,499.99
+271532338108,'Apple iPhone 5s (Latest Model)16GB Space Gray (Factory Unlocked) BRAND NEW',9355,168508202,22901,US,1350,100,Red,1,0,Free,1,0,1,0,1,0,2014-06-26,FixedPrice,0,1000,0,640
+271533219486,'Apple iPhone 5s (Latest Model)16GB Space Gray (Factory Unlocked) BRAND NEW',9355,168508202,22901,US,1350,100,Red,1,0,Free,1,0,1,0,1,0,2014-06-27,FixedPrice,0,1000,0,600
+281354596709,'**NEW** iPhone 5s 16GB Factory Unlocked GSM ( Space Grey )',9355,168508202,96817,US,69,100,Blue,0,0,Flat,1,0,2,0,0,0,2014-06-26,FixedPrice,1,1000,0,650
+281371495178,'Apple iPhone 5s (Latest Model)16GB Space Gray (Factory Unlocked) BRAND NEW',9355,168508202,22901,US,1350,100,Red,1,0,Free,1,0,1,0,1,0,2014-06-26,FixedPrice,0,1000,0,640
+291170872338,'Apple iPhone 5s (Latest Model) - 16GB - Space Gray (Unlocked) Smartphone',9355,168508202,02118,US,27,0,Yellow,0,0,Calculated,1,0,2,20,0,0,2014-06-22,Auction,0,1000,0,590
+291171556135,'NEW Apple iPhone 5s - 16GB - Space Gray (Factory Unlocked) AT&T T-Mobile Verizon',9355,168508202,47119,US,2112,99.7,Red,1,0,FlatDomesticCalculatedInternational,1,1,1,0,0,0,2014-06-23,StoreInventory,1,1000,1,629.95
+301215399825,'16 GB IPHONE 5S FACTORY UNLOCKED NEW IN BOX ***SPACE GRAY*** FREE SHIPPING',9355,168508202,28384,US,9880,99.9,Green,1,0,Free,1,1,1,0,0,0,2014-06-16,StoreInventory,1,1000,1,625
+301217180750,'Unlocked Apple iPhone 5s (Latest Model) - 16GB - Space Gray (T-Mobile) Smartphon',9355,168508202,30311,US,0,0,None,0,0,Free,1,0,0,25,0,0,2014-06-16,Auction,0,1000,0,550
+301218977395,'Unlocked Apple iPhone 5s (Latest Model) - 16GB - Space Gray (T-Mobile) Smartphon',9355,168508202,30311,US,0,0,None,0,0,Free,1,0,0,1,0,0,2014-06-19,Auction,1,1000,0,550
+301223044303,'Apple iPhone 5s (Latest Model) - 16GB - Space Gray (Factory Unlocked) Smartphone',9355,168508202,97321,US,1,100,None,0,0,Calculated,1,0,2,0,1,0,2014-06-23,FixedPrice,0,1000,0,560
+321439395601,'Apple iPhone 5s (Latest Model) - 16GB - Space Gray (Factory Unlocked) Smartphone',9355,168508202,90212,US,51,100,Blue,0,0,Free,1,0,3,0,0,0,2014-06-21,FixedPrice,0,1000,0,599.99
+331232873733,'Apple iPhone 5s (Latest Model) - 16GB - Space Gray (Factory Unlocked) Smartphone',9355,168508202,83646,US,1880,99.4,Red,1,0,FlatDomesticCalculatedInternational,1,0,1,0,0,0,2014-06-19,StoreInventory,1,1000,1,635
+331237993119,'Apple iPhone 5s- 16GB - Space Gray (Factory Unlocked) Smartphone NEW!',9355,168508202,83646,US,1880,99.4,Red,1,0,FlatDomesticCalculatedInternational,1,0,1,0,0,0,2014-06-26,StoreInventory,1,1000,1,630
+360964740415,'16 GB IPHONE 5S (FACTORY UNLOCKED) NEW IN BOX *SEALED* (SPACE GRAY)  CLEAN IMEI',9355,168508202,29212,US,1335,99.6,Red,0,0,Free,1,1,1,0,0,0,2014-06-17,FixedPrice,1,1000,0,618.81

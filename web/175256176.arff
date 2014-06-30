@@ -1,0 +1,56 @@
+@relation QueryResult
+
+@attribute itemId {111383509977,131221519649,141310701095,151328002661,171353676086,171357184688,171361246459,171369488480,181437458979,181446381474,191209711207,191218413199,201112647527,221473552304,221474819614,221477027850,231214013100,251573199743,261506543249,261511216335,261514716277,271517329034,271521751799,321432717596,331231780530,331232793080,331242722870,351101446285}
+@attribute title {'LG Google Nexus 5 - 16GB - Black (Unlocked) Smartphone LG D821','Google Nexus 5 - 16GB - Black (Unlocked) Smartphone','NEW Google Nexus 5 (Latest Model) - 16GB - Black (Unlocked) Smartphone','LG Google Nexus 5 16GB D820 GSM Unlocked Smartphone - Black','New Google Nexus 5 16GB 4G LTE Unlocked GSM Android Phone LG-D820 White 16G','Google Nexus 5 BLACK 16GB Factory UNLOCKED GSM Android 4.4 Smartphone LG-D820','LG GOOGLE NEXUS 5 BLACK 16GB ANDROID 4.4 KIT KAT FACTORY UNLOCKED NEW SMARTPHONE',' Google Nexus 5 (16GB) Black (UNLOCKED) Smartphone NEW IN BOX + FREE Car charger','LG Google Nexus 5 16GB, Unlocked, No Contract, Black, Brand New','NEW IN BOX Nexus 5 -16GB-   BLACK  (Unlocked)  Smartphone','Google Nexus 5  LG-D821 Black 16GB  Factory Unlocked without contract','Google Nexus 5 - 16GB - Red (Unlocked) Smartphone','Brand New Black 16GB Factory Unlocked Google Nexus 5 Smartphone LG-D820','Google Nexus 5 - 16GB - Black T-mobile (Unlocked) Smartphone','LG Google Nexus 5 (BRAND NEW) - 16GB - Black (Unlocked) Smartphone'}
+@attribute categoryId {9355}
+@attribute productId {175256176}
+@attribute postalCode {94541,94022,17331,33966,95219,07666,11239,75013,0,19468,79912,20708,32607,10001,85296,N0B2J0,92806,77584,50010,64161,66215,19702,90024,94544,33126,11235,90015}
+@attribute country {US,CA}
+@attribute feedbackScore numeric
+@attribute positiveFeedbackPercent numeric
+@attribute feedbackRatingStar {Purple,Turquoise,Blue,Red,None,Yellow,TurquoiseShooting,RedShooting}
+@attribute topRatedSeller numeric
+@attribute shippingServiceCost numeric
+@attribute shippingType {FlatDomesticCalculatedInternational,Flat,Free,CalculatedDomesticFlatInternational,Calculated}
+@attribute expeditedShipping numeric
+@attribute oneDayShippingAvailable numeric
+@attribute handlingTime numeric
+@attribute bidCount numeric
+@attribute bestOfferEnabled numeric
+@attribute buyItNowAvailable numeric
+@attribute endTime {2014-06-21,2014-06-28,2014-06-14,2014-06-15,2014-06-20,2014-06-24,2014-06-29,2014-06-16,2014-06-26,2014-06-23,2014-06-18,2014-06-27,2014-06-25}
+@attribute listingType {StoreInventory,Auction,FixedPrice}
+@attribute returnsAccepted numeric
+@attribute conditionId numeric
+@attribute topRatedListing numeric
+@attribute convertedCurrentPrice numeric
+
+@data
+111383509977,'LG Google Nexus 5 - 16GB - Black (Unlocked) Smartphone LG D821',9355,175256176,94541,US,964,100,Purple,1,0,FlatDomesticCalculatedInternational,1,0,1,0,0,0,2014-06-21,StoreInventory,1,1000,1,385
+131221519649,'Google Nexus 5 - 16GB - Black (Unlocked) Smartphone',9355,175256176,94022,US,128,100,Turquoise,0,0,Flat,1,0,3,4,0,0,2014-06-28,Auction,0,1000,0,335
+141310701095,'Google Nexus 5 - 16GB - Black (Unlocked) Smartphone',9355,175256176,17331,US,55,100,Blue,0,0,Free,1,0,2,4,0,0,2014-06-14,Auction,0,1000,0,365
+151328002661,'NEW Google Nexus 5 (Latest Model) - 16GB - Black (Unlocked) Smartphone',9355,175256176,33966,US,1664,99.9,Red,1,0,CalculatedDomesticFlatInternational,0,1,1,0,0,0,2014-06-14,StoreInventory,1,1000,1,399.95
+171353676086,'LG Google Nexus 5 16GB D820 GSM Unlocked Smartphone - Black',9355,175256176,95219,US,251,100,Turquoise,0,0,Flat,1,0,1,4,0,0,2014-06-15,Auction,0,1000,0,339
+171357184688,'Google Nexus 5 - 16GB - Black (Unlocked) Smartphone',9355,175256176,07666,US,4,0,None,0,0,Free,1,0,2,8,0,0,2014-06-20,Auction,0,1000,0,360
+171361246459,'Google Nexus 5 - 16GB - Black (Unlocked) Smartphone',9355,175256176,07666,US,4,0,None,0,0,Calculated,1,0,2,12,0,0,2014-06-24,Auction,0,1000,0,325
+171369488480,'New Google Nexus 5 16GB 4G LTE Unlocked GSM Android Phone LG-D820 White 16G',9355,175256176,11239,US,152,100,Turquoise,0,0,FlatDomesticCalculatedInternational,0,0,1,14,0,0,2014-06-29,Auction,1,1000,0,361
+181437458979,'Google Nexus 5 BLACK 16GB Factory UNLOCKED GSM Android 4.4 Smartphone LG-D820',9355,175256176,75013,US,2207,99.4,Red,1,0,Free,1,0,1,0,0,0,2014-06-16,StoreInventory,1,1000,1,375
+181446381474,'LG GOOGLE NEXUS 5 BLACK 16GB ANDROID 4.4 KIT KAT FACTORY UNLOCKED NEW SMARTPHONE',9355,175256176,0,CA,713,100,Purple,0,0,Free,0,0,1,0,0,0,2014-06-26,FixedPrice,1,1000,0,375
+191209711207,'Google Nexus 5 - 16GB - Black (Unlocked) Smartphone',9355,175256176,19468,US,11,100,Yellow,0,0,Free,1,0,2,32,0,0,2014-06-20,Auction,0,1000,0,350
+191218413199,'Google Nexus 5 BLACK 16GB Factory UNLOCKED GSM Android 4.4 Smartphone LG-D820',9355,175256176,79912,US,2207,99.4,Red,1,0,Free,1,0,1,0,0,0,2014-06-23,StoreInventory,1,1000,1,389.99
+201112647527,' Google Nexus 5 (16GB) Black (UNLOCKED) Smartphone NEW IN BOX + FREE Car charger',9355,175256176,20708,US,1778,100,Red,0,0,FlatDomesticCalculatedInternational,1,0,3,0,0,0,2014-06-29,FixedPrice,0,1000,0,350
+221473552304,'LG Google Nexus 5 16GB, Unlocked, No Contract, Black, Brand New',9355,175256176,32607,US,53,96.6,Blue,0,0,Flat,1,0,2,1,0,0,2014-06-23,Auction,0,1000,0,349.99
+221474819614,'NEW Google Nexus 5 (Latest Model) - 16GB - Black (Unlocked) Smartphone',9355,175256176,10001,US,2787,100,Red,1,0,FlatDomesticCalculatedInternational,1,0,1,0,0,0,2014-06-24,FixedPrice,1,1000,1,369.95
+221477027850,'Google Nexus 5 - 16GB - Black (Unlocked) Smartphone',9355,175256176,85296,US,93,100,Blue,0,0,Free,1,0,1,55,0,0,2014-06-29,Auction,0,1000,0,340
+231214013100,'NEW IN BOX Nexus 5 -16GB-   BLACK  (Unlocked)  Smartphone',9355,175256176,N0B2J0,CA,2860,99.2,Red,0,0,Flat,0,0,1,0,0,0,2014-06-18,StoreInventory,1,1000,0,429.99
+251573199743,'Google Nexus 5 - 16GB - Black (Unlocked) Smartphone',9355,175256176,92806,US,90,100,Blue,0,0,Free,1,0,2,0,1,0,2014-06-28,FixedPrice,0,1000,0,329
+261506543249,'Google Nexus 5  LG-D821 Black 16GB  Factory Unlocked without contract',9355,175256176,77584,US,29,100,Yellow,0,0,Flat,1,0,2,6,0,0,2014-06-18,Auction,0,1000,0,340
+261511216335,'Google Nexus 5 - 16GB - Red (Unlocked) Smartphone',9355,175256176,50010,US,11,100,Yellow,0,0,Free,1,0,2,0,1,0,2014-06-20,FixedPrice,0,1000,0,369
+261514716277,'Brand New Black 16GB Factory Unlocked Google Nexus 5 Smartphone LG-D820',9355,175256176,64161,US,37897,99.7,TurquoiseShooting,0,0,Flat,0,0,2,37,0,0,2014-06-27,Auction,0,1000,0,340
+271517329034,'Google Nexus 5 - 16GB - Black (Unlocked) Smartphone',9355,175256176,66215,US,2,0,None,0,0,Calculated,1,0,2,7,0,0,2014-06-15,Auction,0,1000,0,330
+271521751799,'Google Nexus 5 - 16GB - Black (Unlocked) Smartphone',9355,175256176,19702,US,12,100,Yellow,0,0,Calculated,1,0,2,18,0,0,2014-06-21,Auction,0,1000,0,335
+321432717596,'Google Nexus 5 - 16GB - Black T-mobile (Unlocked) Smartphone',9355,175256176,90024,US,71,100,Blue,0,0,Calculated,1,0,2,6,0,0,2014-06-20,Auction,1,1000,0,350
+331231780530,'Google Nexus 5 - 16GB - Black (Unlocked) Smartphone',9355,175256176,94544,US,13,100,Yellow,0,0,Flat,0,0,1,0,0,0,2014-06-16,FixedPrice,0,1000,0,369
+331232793080,'Google Nexus 5 - 16GB - Black (Unlocked) Smartphone',9355,175256176,33126,US,198,100,Turquoise,0,0,Calculated,1,0,3,0,1,0,2014-06-14,FixedPrice,0,1000,0,359.5
+331242722870,'LG Google Nexus 5 (BRAND NEW) - 16GB - Black (Unlocked) Smartphone',9355,175256176,11235,US,252,100,Turquoise,0,0,Free,0,0,2,0,0,0,2014-06-24,FixedPrice,0,1000,0,349
+351101446285,'Google Nexus 5 BLACK 16GB Factory UNLOCKED GSM Android 4.4 Smartphone LG-D820',9355,175256176,90015,US,462201,99.3,RedShooting,1,0,Calculated,1,1,1,24,0,0,2014-06-25,Auction,0,1000,0,346

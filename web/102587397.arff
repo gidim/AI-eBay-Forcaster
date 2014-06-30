@@ -1,0 +1,56 @@
+@relation QueryResult
+
+@attribute itemId {151333535713,161332001685,171362996099,181441556798,201111783633,221460905186,231265633561,251550218807,251563258539,251566352283,251570322167,261508979934,261511407430,261512779757,261516157315,271238018159,271520770977,271528476472,281363828737,281365109767,291170616827,301210983236,321435868967,331228339069,331231439453,331233987127,331235502877,390863675753}
+@attribute title {'Microsoft 1538 XBox 360 Game System 4GB Black New Sealed','Microsoft Xbox 360 S 4 GB Matte Black Console (NTSC)','Microsoft Xbox 360 S 4 GB Matte Black Console (NTSC) NEW in box (water damage on','Brand New Unopened Microsoft Xbox 360 S 4 GB Matte Black Console','Microsoft Xbox 360 S 4 GB Matte Black Console (NTSC) ','Microsoft Xbox 360 S 4 GB Glossy Black Console','Microsoft Xbox 360  (Latest Model)- 4 GB Black Console Kinect Ready','Microsoft Xbox 360 4 GB Matte Black Console (NTSC)','Microsoft Xbox 360 S 4 GB Matte Black Console (NTSC) With Kinect','Microsoft Xbox 360 E 250GB Console','Microsoft Xbox 360 S 4 GB - NEVER USED - SEALED - READY TO SHIP',' New Microsoft Xbox 360 S  4 GB Matte Black Console ','Microsoft Xbox 360 Slim 250 GB Matte Black Console w/ All Accessories!'}
+@attribute categoryId {139971}
+@attribute productId {102587397}
+@attribute postalCode {49247,94904,33193,55342,75019,60130,85260,90804,37042,97838,89117,34952,10950,33625,32828,V5V3E1,70577,17509,28025,91316,16731,24201,95206,07087,0,76821}
+@attribute country {US,CA}
+@attribute feedbackScore numeric
+@attribute positiveFeedbackPercent numeric
+@attribute feedbackRatingStar {Purple,None,Yellow,Turquoise,Blue,RedShooting}
+@attribute topRatedSeller numeric
+@attribute shippingServiceCost numeric
+@attribute shippingType {FlatDomesticCalculatedInternational,Free,Calculated,Flat,CalculatedDomesticFlatInternational}
+@attribute expeditedShipping numeric
+@attribute oneDayShippingAvailable numeric
+@attribute handlingTime numeric
+@attribute bidCount numeric
+@attribute bestOfferEnabled numeric
+@attribute buyItNowAvailable numeric
+@attribute endTime {2014-06-23,2014-06-16,2014-06-20,2014-06-25,2014-06-26,2014-06-28,2014-06-17,2014-06-22,2014-06-19}
+@attribute listingType {FixedPrice,Auction}
+@attribute returnsAccepted numeric
+@attribute conditionId numeric
+@attribute topRatedListing numeric
+@attribute convertedCurrentPrice numeric
+
+@data
+151333535713,'Microsoft 1538 XBox 360 Game System 4GB Black New Sealed',139971,102587397,49247,US,538,100,Purple,0,0,FlatDomesticCalculatedInternational,1,0,1,0,0,0,2014-06-23,FixedPrice,1,1000,0,164.99
+161332001685,'Microsoft Xbox 360 S 4 GB Matte Black Console (NTSC)',139971,102587397,94904,US,1,0,None,0,0,Free,0,0,2,1,0,0,2014-06-16,Auction,0,1000,0,120
+171362996099,'Microsoft Xbox 360 S 4 GB Matte Black Console (NTSC)',139971,102587397,33193,US,8,100,None,0,0,Free,0,0,2,0,1,0,2014-06-20,FixedPrice,0,1000,0,180
+181441556798,'Microsoft Xbox 360 S 4 GB Matte Black Console (NTSC) NEW in box (water damage on',139971,102587397,55342,US,586,99.7,Purple,0,0,FlatDomesticCalculatedInternational,0,0,1,2,0,0,2014-06-25,Auction,0,1000,0,99
+201111783633,'Microsoft Xbox 360 S 4 GB Matte Black Console (NTSC)',139971,102587397,75019,US,5,100,None,0,0,Calculated,0,0,1,13,0,0,2014-06-26,Auction,0,1000,0,163
+221460905186,'Brand New Unopened Microsoft Xbox 360 S 4 GB Matte Black Console',139971,102587397,60130,US,41,100,Yellow,0,0,Flat,0,0,1,11,0,0,2014-06-16,Auction,0,1000,0,111.5
+231265633561,'Microsoft Xbox 360 S 4 GB Matte Black Console (NTSC)',139971,102587397,85260,US,234,100,Turquoise,0,0,Calculated,1,0,2,43,0,0,2014-06-28,Auction,0,1000,0,107.5
+251550218807,'Microsoft Xbox 360 S 4 GB Matte Black Console (NTSC)',139971,102587397,90804,US,3,100,None,0,0,Free,1,0,2,0,1,0,2014-06-17,FixedPrice,0,1000,0,175
+251563258539,'Microsoft Xbox 360 S 4 GB Matte Black Console (NTSC) ',139971,102587397,37042,US,29,100,Yellow,0,0,Calculated,1,0,2,5,0,0,2014-06-25,Auction,0,1000,0,137.5
+251566352283,'Microsoft Xbox 360 S 4 GB Glossy Black Console',139971,102587397,97838,US,392,100,Turquoise,0,0,Calculated,0,0,2,0,0,0,2014-06-22,FixedPrice,0,1000,0,150
+251570322167,'Microsoft Xbox 360  (Latest Model)- 4 GB Black Console Kinect Ready',139971,102587397,89117,US,63,96,Blue,0,0,FlatDomesticCalculatedInternational,0,0,5,28,0,0,2014-06-26,Auction,1,1000,0,140
+261508979934,'Microsoft Xbox 360 4 GB Matte Black Console (NTSC)',139971,102587397,34952,US,7,100,None,0,0,Calculated,1,0,2,4,0,0,2014-06-23,Auction,0,1000,0,122.5
+261511407430,'Microsoft Xbox 360 S 4 GB Matte Black Console (NTSC)',139971,102587397,10950,US,0,0,None,0,0,Free,0,0,2,11,0,0,2014-06-28,Auction,0,1000,0,162.51
+261512779757,'Microsoft Xbox 360 S 4 GB Matte Black Console (NTSC) With Kinect',139971,102587397,33625,US,50,100,Blue,0,0,Calculated,1,0,2,0,0,0,2014-06-23,FixedPrice,0,1000,0,160
+261516157315,'Microsoft Xbox 360 E 250GB Console',139971,102587397,32828,US,237,98,Turquoise,0,0,Free,1,0,1,0,0,0,2014-06-26,FixedPrice,0,1000,0,170
+271238018159,'Microsoft Xbox 360 S 4 GB - NEVER USED - SEALED - READY TO SHIP',139971,102587397,V5V3E1,CA,290,100,Turquoise,0,0,Flat,0,0,5,0,0,0,2014-06-28,FixedPrice,0,1000,0,189
+271520770977,'Microsoft Xbox 360 S 4 GB Matte Black Console (NTSC)',139971,102587397,70577,US,126,99.2,Turquoise,1,0,Calculated,0,0,1,0,0,0,2014-06-16,FixedPrice,1,1000,1,159
+271528476472,'Microsoft Xbox 360 S 4 GB Matte Black Console (NTSC)',139971,102587397,17509,US,70,100,Blue,0,0,Calculated,1,0,3,1,0,0,2014-06-28,Auction,0,1000,0,150
+281363828737,'Microsoft Xbox 360 S 4 GB Matte Black Console (NTSC)',139971,102587397,28025,US,11,100,Yellow,0,0,CalculatedDomesticFlatInternational,0,0,2,0,1,0,2014-06-17,FixedPrice,0,1000,0,128.99
+281365109767,'Microsoft Xbox 360 S 4 GB Matte Black Console (NTSC)',139971,102587397,91316,US,0,0,None,0,0,FlatDomesticCalculatedInternational,0,0,2,1,0,0,2014-06-23,Auction,0,1000,0,170
+291170616827,' New Microsoft Xbox 360 S  4 GB Matte Black Console ',139971,102587397,16731,US,794,100,Purple,1,0,Flat,0,0,2,4,0,0,2014-06-22,Auction,1,1000,0,150
+301210983236,'Microsoft Xbox 360 S 4 GB Matte Black Console (NTSC)',139971,102587397,24201,US,2,100,None,0,0,Flat,0,0,3,2,0,0,2014-06-17,Auction,1,1000,0,155
+321435868967,'Microsoft Xbox 360 S 4 GB Matte Black Console (NTSC)',139971,102587397,95206,US,68,100,Blue,0,0,Calculated,1,0,2,0,1,0,2014-06-20,FixedPrice,0,1000,0,160
+331228339069,'Microsoft Xbox 360 Slim 250 GB Matte Black Console w/ All Accessories!',139971,102587397,07087,US,0,0,None,0,0,Free,0,0,2,6,0,0,2014-06-16,Auction,0,1000,0,182.5
+331231439453,'Microsoft 1538 XBox 360 Game System 4GB Black New Sealed',139971,102587397,0,US,407608,99.7,RedShooting,1,0,Flat,1,0,1,18,0,0,2014-06-19,Auction,1,1000,1,143.5
+331233987127,'Microsoft Xbox 360  (Latest Model)- 4 GB Black Console Kinect Ready',139971,102587397,76821,US,28,100,Yellow,0,0,FlatDomesticCalculatedInternational,0,0,5,48,0,0,2014-06-16,Auction,1,1000,0,138.51
+331235502877,'Microsoft 1538 XBox 360 Game System 4GB Black New Sealed',139971,102587397,0,US,407608,99.7,RedShooting,1,0,Flat,1,0,1,15,0,0,2014-06-23,Auction,1,1000,1,158.19
+390863675753,'Microsoft 1538 XBox 360 Game System 4GB Black New Sealed',139971,102587397,0,US,407608,99.7,RedShooting,1,0,Flat,1,0,1,27,0,0,2014-06-20,Auction,1,1000,1,158.59
