@@ -1,0 +1,14 @@
+first - mean price double
+number of attributes n (15)
+array with n strings
+n+1 doubles last one constant coefficients for linear regression
+n+1 weights for SVM last one constant
+
+483 intercept constant
+
+table with n attributes on lhs
+color code cells such that anything that's greater than 0 is green less than 0 is red. 0 neutral.
+
+
+attributes - coefficients - SVM weights
+last row constants no color coding
