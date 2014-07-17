@@ -1,12 +1,17 @@
 AI Based Attribute Evaluation Models For Auction Based eCommerce Markets
 ==============================================================================
 
-Java
-Weka
-MySQL
-PHP
-HTML
-CSS
+Artificial Intelligence:
+..* Linear Regression
+..* Support Vector Machine
+
+Technolgy:
+⋅⋅*Java
+⋅⋅*Weka
+⋅⋅*MySQL
+⋅⋅*PHP
+⋅⋅*HTML
+⋅⋅*CSS
 
 In this app we look at sales data provided by eBay, the most widely used auction based eCommerce
 platform, and attempt to generate attribute based pricing models for individual items using algorithms
