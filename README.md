@@ -1,4 +1,5 @@
-ebayForecaster
+AI Based Attribute Evaluation Models For Auction Based eCommerce Markets
+
 =============
 
 Java
